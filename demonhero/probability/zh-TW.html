@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>惡魔召喚英雄 — 機率公告</title>
+<style>:root{--bg:#f7f5f1;--fg:#1d1a17;--dim:#5d564e;--line:#d9d2c7;--head:#8a5a14;--notice:#9a2f1c}
+@media (prefers-color-scheme:dark){:root{--bg:#141217;--fg:#ece6dc;--dim:#a99f93;--line:#3a343c;--head:#e8b45a;--notice:#ff9a7a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,-apple-system,"Noto Sans KR","Noto Sans JP","Noto Sans TC","Noto Sans SC",sans-serif}
+main{max-width:960px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:8px 0 4px}h2{font-size:21px;margin:40px 0 8px;color:var(--head);border-bottom:1px solid var(--line);padding-bottom:6px}
+p{margin:8px 0;color:var(--dim)}.notice{color:var(--notice);font-weight:700}nav{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;margin-bottom:8px}nav a{color:var(--dim)}nav a[aria-current]{color:var(--fg);font-weight:700}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:10px 0;font-size:14px}th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--head)}caption{text-align:left;font-weight:700;padding:4px 0}</style>
+</head>
+<body>
+<main>
+<nav aria-label="language"><a href="ko.html">한국어</a><a href="en.html">English</a><a href="zh-TW.html" aria-current="page">繁體中文</a><a href="ja.html">日本語</a><a href="de.html">Deutsch</a><a href="zh-CN.html">简体中文</a><a href="es.html">Español</a><a href="it.html">Italiano</a><a href="pl.html">Polski</a></nav>
+<p class="notice">包含機率型道具</p>
+<h1>惡魔召喚英雄 · 機率公告</h1>
+<p>金幣、魔晶石、聖水亦可透過商店商品取得，因此公開以上述貨幣取得之所有隨機結果的機率。</p>
+<p>以下數值皆直接由遊戲內資料計算並顯示（版本 1.1.0），無期間限制，常態適用。</p>
+<h2 id="rarity">物品品質機率</h2>
+<p>透過「多一個戰利品袋」取得的戰利品袋，機率相同。</p>
+<p>抽中獨特或套裝時，若該部位、物品等級無可用候選，將改為稀有。</p>
+<div class="tw"><table>
+<thead><tr><th>取得途徑</th><th>普通</th><th>魔法</th><th>稀有</th><th>套裝</th><th>獨特</th></tr></thead><tbody>
+<tr><td>離線戰利品袋</td><td>62.01%</td><td>28.01%</td><td>9.98%</td><td>0%</td><td>0%</td></tr>
+<tr><td>戰利品袋（持有珍品袋）</td><td>62.01%</td><td>28%</td><td>9.98%</td><td>0.0055%</td><td>0.0055%</td></tr>
+<tr><td>黑市</td><td>0%</td><td>78%</td><td>20%</td><td>0.5%</td><td>1.5%</td></tr>
+</tbody></table></div>
+<h2 id="gamble">黑市</h2>
+<p>貨架補貨時（每日0點、8點、16點更新，或使用魔晶石立即刷新），會決定每一格的品質。各格以「?」遮蓋，購買後才會揭曉。品質機率依補貨當下的保底累計次數與黑市熟客階數決定。</p>
+<p>保底：每購買一格非套裝、非獨特的物品累計+1，購買套裝或獨特時歸0。累計每增加30次，套裝與獨特的權重乘以×2（無上限）。</p>
+<p>物品等級：目前關卡-3~+3之間的整數，均等機率</p>
+<p>部位：貨架每格固定（武器2格 · 防具4格 · 飾品2格）</p>
+<p>基底物品：該部位中本職業可用的基底物品，均等機率</p>
+<p>獨特：該部位、物品等級可出現的獨特物品，均等機率</p>
+<p>套裝：該部位、物品等級可出現的套裝部件，均等機率</p>
+<p>使用魔晶石立即刷新的貨架，機率亦相同。</p>
+<div class="tw"><table>
+<thead><tr><th>黑市熟客階數</th><th>普通</th><th>魔法</th><th>稀有</th><th>套裝</th><th>獨特</th></tr></thead><tbody>
+<tr><td>0</td><td>0%</td><td>78%</td><td>20%</td><td>0.5%</td><td>1.5%</td></tr>
+<tr><td>1</td><td>0%</td><td>77.23%</td><td>19.8%</td><td>0.99%</td><td>1.98%</td></tr>
+<tr><td>2</td><td>0%</td><td>76.47%</td><td>19.61%</td><td>1.47%</td><td>2.45%</td></tr>
+<tr><td>3</td><td>0%</td><td>75.73%</td><td>19.42%</td><td>1.94%</td><td>2.91%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<thead><tr><th>貨架補貨時的保底累計次數</th><th>普通</th><th>魔法</th><th>稀有</th><th>套裝</th><th>獨特</th></tr></thead><tbody>
+<tr><td>0~29次</td><td>0%</td><td>78%</td><td>20%</td><td>0.5%</td><td>1.5%</td></tr>
+<tr><td>30~59次</td><td>0%</td><td>76.47%</td><td>19.61%</td><td>0.98%</td><td>2.94%</td></tr>
+<tr><td>60~89次</td><td>0%</td><td>73.58%</td><td>18.87%</td><td>1.89%</td><td>5.66%</td></tr>
+<tr><td>90~119次</td><td>0%</td><td>68.42%</td><td>17.54%</td><td>3.51%</td><td>10.53%</td></tr>
+<tr><td>120~149次</td><td>0%</td><td>60%</td><td>15.38%</td><td>6.15%</td><td>18.46%</td></tr>
+</tbody></table></div>
+<h2 id="sack">戰利品袋</h2>
+<p>每個戰利品袋含物品3件（戰利品袋每階+1）</p>
+<p>物品等級：安全關卡-2~+3之間的整數，均等機率</p>
+<p>部位：8個部位均等機率 · 基底物品：該部位基底物品均等機率</p>
+<p>寶石：每個戰利品袋2%機率獲得1顆 · 5種均等機率 · 品級為目前難度的基礎品級</p>
+<p>獨特選取權重：基礎為1，同一獨特已取得3次以上時×0.5，持有該獨特印記10個以上時×2</p>
+<h2 id="affix">詞綴</h2>
+<p>選取方式：從已決定的種類（前綴或後綴）中，選出該部位、物品等級已開放、符合基底物品條件，且不與已附加詞綴重複的候選，均等機率。同一群組（元素傷害提升、抗性）最多附加2條。</p>
+<p>數值：該階數值範圍的最小值~最大值之間，均等機率</p>
+<p>技能+1基底物品（魔杖）：選取前綴時，先有20%機率為「精通的」</p>
+<p>「精通的」詞綴自T3起才有，因此扣除範圍內較低階的比例。</p>
+<p>僅會出現該詞綴已開放的階中最高的5階，由低至高比例為40 : 30 : 18 : 9 : 3。魔法物品的最高開放階權重為×2。</p>
+<div class="tw"><table>
+<thead><tr><th>詞綴數量</th><th></th></tr></thead><tbody>
+<tr><td>魔法</td><td>僅前綴 37.5% · 僅後綴 37.5% · 兩者皆有 25%</td></tr>
+<tr><td>稀有</td><td>3~5個均等機率（各33.33%）· 每附加一條，前綴、後綴各50%（每種最多3條）</td></tr>
+<tr><td>套裝</td><td>固定詞綴 + 隨機後綴1條</td></tr>
+<tr><td>獨特</td><td>僅固定詞綴（無隨機）</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>各部位第一條詞綴候選數（前綴 / 後綴）— 選中機率為 1 ÷ 候選數</caption>
+<thead><tr><th></th><th>ilvl 1</th><th>ilvl 25</th><th>ilvl 55</th><th>ilvl 87</th><th>ilvl 119</th><th>ilvl 150</th></tr></thead><tbody>
+<tr><td>武器</td><td>16~17 / 8</td><td>17~18 / 8</td><td>17~18 / 8</td><td>17~18 / 8</td><td>17~18 / 8</td><td>17~18 / 8</td></tr>
+<tr><td>副手</td><td>10 / 10~14</td><td>10 / 10~14</td><td>10 / 10~14</td><td>10 / 10~14</td><td>10 / 10~14</td><td>10 / 10~14</td></tr>
+<tr><td>頭盔</td><td>4 / 17</td><td>5 / 17</td><td>5 / 17</td><td>5 / 17</td><td>5 / 17</td><td>5 / 17</td></tr>
+<tr><td>鎧甲</td><td>3 / 15</td><td>3 / 15</td><td>3 / 15</td><td>3 / 15</td><td>3 / 15</td><td>3 / 15</td></tr>
+<tr><td>手套</td><td>11 / 15</td><td>11 / 15</td><td>11 / 15</td><td>11 / 15</td><td>11 / 15</td><td>11 / 15</td></tr>
+<tr><td>靴子</td><td>2 / 14</td><td>2 / 14</td><td>2 / 14</td><td>2 / 14</td><td>2 / 14</td><td>2 / 14</td></tr>
+<tr><td>戒指</td><td>8 / 17</td><td>8 / 17</td><td>8 / 17</td><td>8 / 17</td><td>8 / 17</td><td>8 / 17</td></tr>
+<tr><td>項鍊</td><td>12 / 19</td><td>13 / 19</td><td>13 / 19</td><td>13 / 19</td><td>13 / 19</td><td>13 / 19</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<thead><tr><th>詞綴階數機率</th><th>最高</th><th>最高-1</th><th>最高-2</th><th>最高-3</th><th>最高-4</th></tr></thead><tbody>
+<tr><td>已開放1階</td><td>100%</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>已開放1階 （魔法）</td><td>100%</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>已開放2階</td><td>42.86%</td><td>57.14%</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>已開放2階 （魔法）</td><td>60%</td><td>40%</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>已開放3階</td><td>20.45%</td><td>34.09%</td><td>45.45%</td><td>–</td><td>–</td></tr>
+<tr><td>已開放3階 （魔法）</td><td>33.96%</td><td>28.3%</td><td>37.74%</td><td>–</td><td>–</td></tr>
+<tr><td>已開放4階</td><td>9.28%</td><td>18.56%</td><td>30.93%</td><td>41.24%</td><td>–</td></tr>
+<tr><td>已開放4階 （魔法）</td><td>16.98%</td><td>16.98%</td><td>28.3%</td><td>37.74%</td><td>–</td></tr>
+<tr><td>已開放5階以上</td><td>3%</td><td>9%</td><td>18%</td><td>30%</td><td>40%</td></tr>
+<tr><td>已開放5階以上 （魔法）</td><td>5.83%</td><td>8.74%</td><td>17.48%</td><td>29.13%</td><td>38.83%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>武器詞綴候選</caption>
+<thead><tr><th>詞綴</th><th>種類</th><th>效果</th><th>開放ilvl</th><th>條件</th></tr></thead><tbody>
+<tr><td>鋒利的</td><td>前綴</td><td>傷害提升 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>殘暴的</td><td>前綴</td><td>額外物理傷害 +N</td><td>1</td><td>–</td></tr>
+<tr><td>火焰的</td><td>前綴</td><td>額外火焰傷害 +N</td><td>1</td><td>–</td></tr>
+<tr><td>冰霜的</td><td>前綴</td><td>額外冰霜傷害 +N</td><td>1</td><td>–</td></tr>
+<tr><td>雷電的</td><td>前綴</td><td>額外閃電傷害 +1–N</td><td>1</td><td>–</td></tr>
+<tr><td>毒牙的</td><td>前綴</td><td>額外毒素傷害 +N（5秒）</td><td>1</td><td>–</td></tr>
+<tr><td>披焰的</td><td>前綴</td><td>火焰傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>披霜的</td><td>前綴</td><td>冰霜傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>披雷的</td><td>前綴</td><td>閃電傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>披毒的</td><td>前綴</td><td>毒素傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>迅捷的</td><td>前綴</td><td>攻擊速度 +N%</td><td>1</td><td>長劍·戰斧·釘錘·木杖·魔杖·長弓·十字弓·匕首專用</td></tr>
+<tr><td>流暢的</td><td>前綴</td><td>施法速度 +N%</td><td>1</td><td>木杖·魔杖專用</td></tr>
+<tr><td>致命的</td><td>前綴</td><td>爆擊機率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>無情的</td><td>前綴</td><td>爆擊傷害 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>穿刺的</td><td>前綴</td><td>抗性穿透 N（全元素）</td><td>1</td><td>長劍·戰斧·釘錘·木杖·魔杖·長弓·十字弓·匕首專用</td></tr>
+<tr><td>精通的</td><td>前綴</td><td>所有技能等級 +N</td><td>25</td><td>–</td></tr>
+<tr><td>專精的</td><td>前綴</td><td>隨機系別（A·B·C各33.33%）技能等級 +N</td><td>1</td><td>–</td></tr>
+<tr><td>寬廣的</td><td>前綴</td><td>範圍半徑 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>公牛之</td><td>後綴</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>力量之</td><td>後綴</td><td>力量 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷之</td><td>後綴</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>體力之</td><td>後綴</td><td>體力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神之</td><td>後綴</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>水蛭之</td><td>後綴</td><td>物理傷害的 N% 轉為吸血</td><td>1</td><td>–</td></tr>
+<tr><td>持久之</td><td>後綴</td><td>異常狀態持續 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>劊子手之</td><td>後綴</td><td>對HP 30%以下目標傷害 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>副手詞綴候選</caption>
+<thead><tr><th>詞綴</th><th>種類</th><th>效果</th><th>開放ilvl</th><th>條件</th></tr></thead><tbody>
+<tr><td>鋒利的</td><td>前綴</td><td>傷害提升 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>披焰的</td><td>前綴</td><td>火焰傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>披霜的</td><td>前綴</td><td>冰霜傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>披雷的</td><td>前綴</td><td>閃電傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>披毒的</td><td>前綴</td><td>毒素傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>迅捷的</td><td>前綴</td><td>攻擊速度 +N%</td><td>1</td><td>箭袋專用</td></tr>
+<tr><td>流暢的</td><td>前綴</td><td>施法速度 +N%</td><td>1</td><td>法球專用</td></tr>
+<tr><td>無情的</td><td>前綴</td><td>爆擊傷害 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>穿刺的</td><td>前綴</td><td>抗性穿透 N（全元素）</td><td>1</td><td>法球·箭袋專用</td></tr>
+<tr><td>專精的</td><td>前綴</td><td>隨機系別（A·B·C各33.33%）技能等級 +N</td><td>1</td><td>–</td></tr>
+<tr><td>堅韌的</td><td>前綴</td><td>護甲提升 +N%</td><td>1</td><td>圓盾專用</td></tr>
+<tr><td>荊棘的</td><td>前綴</td><td>對近戰攻擊者反彈 N 點傷害</td><td>1</td><td>圓盾專用</td></tr>
+<tr><td>寬廣的</td><td>前綴</td><td>範圍半徑 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>公牛之</td><td>後綴</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>力量之</td><td>後綴</td><td>力量 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷之</td><td>後綴</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>體力之</td><td>後綴</td><td>體力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神之</td><td>後綴</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>禦火之</td><td>後綴</td><td>火焰抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦霜之</td><td>後綴</td><td>冰霜抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦雷之</td><td>後綴</td><td>閃電抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦毒之</td><td>後綴</td><td>毒素抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>祝福之</td><td>後綴</td><td>所有抗性 +N</td><td>1</td><td>圓盾專用</td></tr>
+<tr><td>泉水之</td><td>後綴</td><td>資源回復 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>城牆之</td><td>後綴</td><td>格擋機率 +N%</td><td>1</td><td>圓盾專用</td></tr>
+<tr><td>鐵壁之</td><td>後綴</td><td>格擋減傷 +N%</td><td>1</td><td>圓盾專用</td></tr>
+<tr><td>不屈之</td><td>後綴</td><td>受到傷害 −N%</td><td>1</td><td>圓盾專用</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>頭盔詞綴候選</caption>
+<thead><tr><th>詞綴</th><th>種類</th><th>效果</th><th>開放ilvl</th><th>條件</th></tr></thead><tbody>
+<tr><td>精通的</td><td>前綴</td><td>所有技能等級 +N</td><td>25</td><td>–</td></tr>
+<tr><td>專精的</td><td>前綴</td><td>隨機系別（A·B·C各33.33%）技能等級 +N</td><td>1</td><td>–</td></tr>
+<tr><td>堅韌的</td><td>前綴</td><td>護甲提升 +N%</td><td>1</td><td>頭盔·兜帽·冠冕專用</td></tr>
+<tr><td>荊棘的</td><td>前綴</td><td>對近戰攻擊者反彈 N 點傷害</td><td>1</td><td>頭盔·兜帽·冠冕專用</td></tr>
+<tr><td>堅固的</td><td>前綴</td><td>護甲 +N</td><td>1</td><td>–</td></tr>
+<tr><td>公牛之</td><td>後綴</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>巨人之</td><td>後綴</td><td>最大HP +N%</td><td>1</td><td>–</td></tr>
+<tr><td>力量之</td><td>後綴</td><td>力量 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷之</td><td>後綴</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>體力之</td><td>後綴</td><td>體力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神之</td><td>後綴</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>禦火之</td><td>後綴</td><td>火焰抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦霜之</td><td>後綴</td><td>冰霜抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦雷之</td><td>後綴</td><td>閃電抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦毒之</td><td>後綴</td><td>毒素抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>再生之</td><td>後綴</td><td>每秒回復 N HP</td><td>1</td><td>–</td></tr>
+<tr><td>泉水之</td><td>後綴</td><td>資源回復 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>節約之</td><td>後綴</td><td>技能資源消耗 −N%</td><td>1</td><td>–</td></tr>
+<tr><td>時間之</td><td>後綴</td><td>冷卻縮減 N%</td><td>1</td><td>–</td></tr>
+<tr><td>幸運之</td><td>後綴</td><td>魔法尋獲 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>不屈之</td><td>後綴</td><td>受到傷害 −N%</td><td>1</td><td>頭盔·兜帽·冠冕專用</td></tr>
+<tr><td>學識之</td><td>後綴</td><td>經驗值獲得 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>鎧甲詞綴候選</caption>
+<thead><tr><th>詞綴</th><th>種類</th><th>效果</th><th>開放ilvl</th><th>條件</th></tr></thead><tbody>
+<tr><td>堅韌的</td><td>前綴</td><td>護甲提升 +N%</td><td>1</td><td>板甲·鎖子甲·皮甲·長袍專用</td></tr>
+<tr><td>荊棘的</td><td>前綴</td><td>對近戰攻擊者反彈 N 點傷害</td><td>1</td><td>板甲·鎖子甲·皮甲·長袍專用</td></tr>
+<tr><td>堅固的</td><td>前綴</td><td>護甲 +N</td><td>1</td><td>–</td></tr>
+<tr><td>公牛之</td><td>後綴</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>巨人之</td><td>後綴</td><td>最大HP +N%</td><td>1</td><td>–</td></tr>
+<tr><td>力量之</td><td>後綴</td><td>力量 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷之</td><td>後綴</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>體力之</td><td>後綴</td><td>體力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神之</td><td>後綴</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>全能之</td><td>後綴</td><td>所有屬性 +N</td><td>1</td><td>–</td></tr>
+<tr><td>禦火之</td><td>後綴</td><td>火焰抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦霜之</td><td>後綴</td><td>冰霜抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦雷之</td><td>後綴</td><td>閃電抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦毒之</td><td>後綴</td><td>毒素抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>祝福之</td><td>後綴</td><td>所有抗性 +N</td><td>1</td><td>板甲·鎖子甲·皮甲·長袍專用</td></tr>
+<tr><td>再生之</td><td>後綴</td><td>每秒回復 N HP</td><td>1</td><td>–</td></tr>
+<tr><td>靈巧之</td><td>後綴</td><td>閃避值 +N</td><td>1</td><td>–</td></tr>
+<tr><td>不屈之</td><td>後綴</td><td>受到傷害 −N%</td><td>1</td><td>板甲·鎖子甲·皮甲·長袍專用</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>手套詞綴候選</caption>
+<thead><tr><th>詞綴</th><th>種類</th><th>效果</th><th>開放ilvl</th><th>條件</th></tr></thead><tbody>
+<tr><td>鋒利的</td><td>前綴</td><td>傷害提升 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>殘暴的</td><td>前綴</td><td>額外物理傷害 +N</td><td>1</td><td>–</td></tr>
+<tr><td>披焰的</td><td>前綴</td><td>火焰傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>披霜的</td><td>前綴</td><td>冰霜傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>披雷的</td><td>前綴</td><td>閃電傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>披毒的</td><td>前綴</td><td>毒素傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>迅捷的</td><td>前綴</td><td>攻擊速度 +N%</td><td>1</td><td>護手·皮手套·絲綢手套專用</td></tr>
+<tr><td>流暢的</td><td>前綴</td><td>施法速度 +N%</td><td>1</td><td>護手·皮手套·絲綢手套專用</td></tr>
+<tr><td>致命的</td><td>前綴</td><td>爆擊機率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>堅韌的</td><td>前綴</td><td>護甲提升 +N%</td><td>1</td><td>護手·皮手套·絲綢手套專用</td></tr>
+<tr><td>堅固的</td><td>前綴</td><td>護甲 +N</td><td>1</td><td>–</td></tr>
+<tr><td>公牛之</td><td>後綴</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>力量之</td><td>後綴</td><td>力量 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷之</td><td>後綴</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>體力之</td><td>後綴</td><td>體力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神之</td><td>後綴</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>禦火之</td><td>後綴</td><td>火焰抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦霜之</td><td>後綴</td><td>冰霜抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦雷之</td><td>後綴</td><td>閃電抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦毒之</td><td>後綴</td><td>毒素抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>再生之</td><td>後綴</td><td>每秒回復 N HP</td><td>1</td><td>–</td></tr>
+<tr><td>時間之</td><td>後綴</td><td>冷卻縮減 N%</td><td>1</td><td>–</td></tr>
+<tr><td>靈巧之</td><td>後綴</td><td>閃避值 +N</td><td>1</td><td>–</td></tr>
+<tr><td>幸運之</td><td>後綴</td><td>魔法尋獲 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>貪婪之</td><td>後綴</td><td>金幣尋獲 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>持久之</td><td>後綴</td><td>異常狀態持續 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>靴子詞綴候選</caption>
+<thead><tr><th>詞綴</th><th>種類</th><th>效果</th><th>開放ilvl</th><th>條件</th></tr></thead><tbody>
+<tr><td>堅韌的</td><td>前綴</td><td>護甲提升 +N%</td><td>1</td><td>脛甲·長靴·絲綢鞋專用</td></tr>
+<tr><td>堅固的</td><td>前綴</td><td>護甲 +N</td><td>1</td><td>–</td></tr>
+<tr><td>公牛之</td><td>後綴</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>力量之</td><td>後綴</td><td>力量 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷之</td><td>後綴</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>體力之</td><td>後綴</td><td>體力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神之</td><td>後綴</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>禦火之</td><td>後綴</td><td>火焰抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦霜之</td><td>後綴</td><td>冰霜抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦雷之</td><td>後綴</td><td>閃電抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦毒之</td><td>後綴</td><td>毒素抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>再生之</td><td>後綴</td><td>每秒回復 N HP</td><td>1</td><td>–</td></tr>
+<tr><td>疾風之</td><td>後綴</td><td>移動速度 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>靈巧之</td><td>後綴</td><td>閃避值 +N</td><td>1</td><td>–</td></tr>
+<tr><td>幸運之</td><td>後綴</td><td>魔法尋獲 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>貪婪之</td><td>後綴</td><td>金幣尋獲 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>戒指詞綴候選</caption>
+<thead><tr><th>詞綴</th><th>種類</th><th>效果</th><th>開放ilvl</th><th>條件</th></tr></thead><tbody>
+<tr><td>鋒利的</td><td>前綴</td><td>傷害提升 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>殘暴的</td><td>前綴</td><td>額外物理傷害 +N</td><td>1</td><td>–</td></tr>
+<tr><td>火焰的</td><td>前綴</td><td>額外火焰傷害 +N</td><td>1</td><td>–</td></tr>
+<tr><td>冰霜的</td><td>前綴</td><td>額外冰霜傷害 +N</td><td>1</td><td>–</td></tr>
+<tr><td>雷電的</td><td>前綴</td><td>額外閃電傷害 +1–N</td><td>1</td><td>–</td></tr>
+<tr><td>毒牙的</td><td>前綴</td><td>額外毒素傷害 +N（5秒）</td><td>1</td><td>–</td></tr>
+<tr><td>致命的</td><td>前綴</td><td>爆擊機率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>無情的</td><td>前綴</td><td>爆擊傷害 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>公牛之</td><td>後綴</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>力量之</td><td>後綴</td><td>力量 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷之</td><td>後綴</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>體力之</td><td>後綴</td><td>體力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神之</td><td>後綴</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>全能之</td><td>後綴</td><td>所有屬性 +N</td><td>1</td><td>–</td></tr>
+<tr><td>禦火之</td><td>後綴</td><td>火焰抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦霜之</td><td>後綴</td><td>冰霜抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦雷之</td><td>後綴</td><td>閃電抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦毒之</td><td>後綴</td><td>毒素抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>祝福之</td><td>後綴</td><td>所有抗性 +N</td><td>1</td><td>戒指專用</td></tr>
+<tr><td>水蛭之</td><td>後綴</td><td>物理傷害的 N% 轉為吸血</td><td>1</td><td>–</td></tr>
+<tr><td>再生之</td><td>後綴</td><td>每秒回復 N HP</td><td>1</td><td>–</td></tr>
+<tr><td>泉水之</td><td>後綴</td><td>資源回復 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>幸運之</td><td>後綴</td><td>魔法尋獲 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>貪婪之</td><td>後綴</td><td>金幣尋獲 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>劊子手之</td><td>後綴</td><td>對HP 30%以下目標傷害 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>項鍊詞綴候選</caption>
+<thead><tr><th>詞綴</th><th>種類</th><th>效果</th><th>開放ilvl</th><th>條件</th></tr></thead><tbody>
+<tr><td>鋒利的</td><td>前綴</td><td>傷害提升 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>火焰的</td><td>前綴</td><td>額外火焰傷害 +N</td><td>1</td><td>–</td></tr>
+<tr><td>冰霜的</td><td>前綴</td><td>額外冰霜傷害 +N</td><td>1</td><td>–</td></tr>
+<tr><td>雷電的</td><td>前綴</td><td>額外閃電傷害 +1–N</td><td>1</td><td>–</td></tr>
+<tr><td>披焰的</td><td>前綴</td><td>火焰傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>披霜的</td><td>前綴</td><td>冰霜傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>披雷的</td><td>前綴</td><td>閃電傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>披毒的</td><td>前綴</td><td>毒素傷害 +N%</td><td>1</td><td>群組 元素傷害</td></tr>
+<tr><td>流暢的</td><td>前綴</td><td>施法速度 +N%</td><td>1</td><td>項鍊專用</td></tr>
+<tr><td>致命的</td><td>前綴</td><td>爆擊機率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>無情的</td><td>前綴</td><td>爆擊傷害 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>穿刺的</td><td>前綴</td><td>抗性穿透 N（全元素）</td><td>1</td><td>項鍊專用</td></tr>
+<tr><td>精通的</td><td>前綴</td><td>所有技能等級 +N</td><td>25</td><td>–</td></tr>
+<tr><td>公牛之</td><td>後綴</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>巨人之</td><td>後綴</td><td>最大HP +N%</td><td>1</td><td>–</td></tr>
+<tr><td>力量之</td><td>後綴</td><td>力量 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷之</td><td>後綴</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>體力之</td><td>後綴</td><td>體力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神之</td><td>後綴</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>全能之</td><td>後綴</td><td>所有屬性 +N</td><td>1</td><td>–</td></tr>
+<tr><td>禦火之</td><td>後綴</td><td>火焰抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦霜之</td><td>後綴</td><td>冰霜抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦雷之</td><td>後綴</td><td>閃電抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>禦毒之</td><td>後綴</td><td>毒素抗性 +N</td><td>1</td><td>群組 抗性</td></tr>
+<tr><td>祝福之</td><td>後綴</td><td>所有抗性 +N</td><td>1</td><td>項鍊專用</td></tr>
+<tr><td>水蛭之</td><td>後綴</td><td>物理傷害的 N% 轉為吸血</td><td>1</td><td>–</td></tr>
+<tr><td>泉水之</td><td>後綴</td><td>資源回復 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>節約之</td><td>後綴</td><td>技能資源消耗 −N%</td><td>1</td><td>–</td></tr>
+<tr><td>時間之</td><td>後綴</td><td>冷卻縮減 N%</td><td>1</td><td>–</td></tr>
+<tr><td>幸運之</td><td>後綴</td><td>魔法尋獲 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>持久之</td><td>後綴</td><td>異常狀態持續 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>學識之</td><td>後綴</td><td>經驗值獲得 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<h2 id="craft">重鑄 · 刻印</h2>
+<p>全部重鑄：依物品品質產生新的詞綴列表（依上方詞綴規則）</p>
+<p>數值重鑄：詞綴與階不變，僅數值於該階範圍內均等重骰</p>
+<p>鎖定重鑄：鎖定的詞綴不變，其餘依上方規則補至總計3~5條（均等機率）</p>
+<p>品質提升（魔法升為稀有）：均等附加1~3條詞綴（最多5條）</p>
+<p>刻印：所選詞綴以該物品等級最高的開放階附加，僅數值為均等機率</p>
+<p>打孔 · 底材升階 · 寶石合成 · 取出寶石：無隨機要素</p>
+<p>首次全部重鑄免費。重鑄的裝備若為武器·副手·手套·戒指·項鍊之一，必定附加最高數值的「鋒利的」T1，其餘詞綴依上方詞綴規則。其他部位與一般重鑄相同。</p>
+<h2 id="enhance">裝備強化</h2>
+<p>強化每階讓武器傷害 ×(1 + 0.06 × 階數)(+15 = ×1.90),防具以四個部位階數總和讓生命 ×(1 + 總和 ÷ 120)(四部位皆 +15 = ×1.50),最高 +15。+6 起失敗會降一階,但 +5 · +10 是底線,不會再往下掉,裝備也不會消失。使用保護券,失敗時也會保住階級。</p>
+<p>傳承是沒有機率的確定作業:把階級移到同部位、物品等級相同或更高的 +0 裝備,原裝備回到 +0。強化石 = 使用保護券強化到該階所需強化石的 25% × min(1, 提升的物品等級 ÷ 10),四捨五入。</p>
+<p>保護券：只有在失敗會降階時才消耗 1 張並保住階級（鐵匠從 +7 起使用保護券）。不會改變成功機率，不會降階的失敗也不會消耗。</p>
+<p>強化石由擊殺 Boss 取得，每日上限 1 / 2 / 4 顆（地面 / 階梯 1–50 層 / 階梯 51 層起，全角色合計），每日目標 5 項另給 1 顆（同一上限內）。</p>
+<div class="tw"><table>
+<thead><tr><th>階段</th><th>成功</th><th>失敗時</th><th>保護券</th><th>強化石</th></tr></thead><tbody>
+<tr><td>+0 › +1</td><td>100%</td><td>維持</td><td>—</td><td>1</td></tr>
+<tr><td>+1 › +2</td><td>90%</td><td>維持</td><td>—</td><td>1</td></tr>
+<tr><td>+2 › +3</td><td>80%</td><td>維持</td><td>—</td><td>1</td></tr>
+<tr><td>+3 › +4</td><td>70%</td><td>維持</td><td>—</td><td>1</td></tr>
+<tr><td>+4 › +5</td><td>60%</td><td>維持</td><td>—</td><td>1</td></tr>
+<tr><td>+5 › +6</td><td>60%</td><td>維持</td><td>—</td><td>2</td></tr>
+<tr><td>+6 › +7</td><td>55%</td><td>降一階</td><td>保住階級</td><td>2</td></tr>
+<tr><td>+7 › +8</td><td>50%</td><td>降一階</td><td>保住階級</td><td>2</td></tr>
+<tr><td>+8 › +9</td><td>45%</td><td>降一階</td><td>保住階級</td><td>2</td></tr>
+<tr><td>+9 › +10</td><td>40%</td><td>降一階</td><td>保住階級</td><td>2</td></tr>
+<tr><td>+10 › +11</td><td>40%</td><td>維持</td><td>—</td><td>3</td></tr>
+<tr><td>+11 › +12</td><td>35%</td><td>降一階</td><td>保住階級</td><td>3</td></tr>
+<tr><td>+12 › +13</td><td>30%</td><td>降一階</td><td>保住階級</td><td>3</td></tr>
+<tr><td>+13 › +14</td><td>25%</td><td>降一階</td><td>保住階級</td><td>3</td></tr>
+<tr><td>+14 › +15</td><td>20%</td><td>降一階</td><td>保住階級</td><td>3</td></tr>
+</tbody></table></div>
+<h2 id="legend">傳說強化</h2>
+<p>傳說裝備使用自己的強化表。強化石為同階一般強化的 3 倍，保護券只能用在升到 +10 為止的強化。在保底階級（+5 · +10 · +12）失敗時維持不變，因此升到 +12 後不會降到 +12 以下。最高 +15，裝備不會消失。</p>
+<p>保底：在 +10 以上強化傳說裝備失敗時，該裝備的保底累積 1（最多 10）。保底達到 10 時，下一次強化 100% 成功，保底歸 0。依表中機率成功時保底維持不變。</p>
+<p>透過傳承最多只能將 +10 移到傳說裝備上（無機率的確定作業）。傳說裝備的階級無法移到其他裝備。</p>
+<div class="tw"><table>
+<thead><tr><th>階段</th><th>成功</th><th>失敗時</th><th>保護券</th><th>強化石</th></tr></thead><tbody>
+<tr><td>+0 › +1</td><td>100%</td><td>維持</td><td>—</td><td>3</td></tr>
+<tr><td>+1 › +2</td><td>100%</td><td>維持</td><td>—</td><td>3</td></tr>
+<tr><td>+2 › +3</td><td>100%</td><td>維持</td><td>—</td><td>3</td></tr>
+<tr><td>+3 › +4</td><td>100%</td><td>維持</td><td>—</td><td>3</td></tr>
+<tr><td>+4 › +5</td><td>100%</td><td>維持</td><td>—</td><td>3</td></tr>
+<tr><td>+5 › +6</td><td>70%</td><td>維持</td><td>—</td><td>6</td></tr>
+<tr><td>+6 › +7</td><td>62%</td><td>降一階</td><td>保住階級</td><td>6</td></tr>
+<tr><td>+7 › +8</td><td>55%</td><td>降一階</td><td>保住階級</td><td>6</td></tr>
+<tr><td>+8 › +9</td><td>47%</td><td>降一階</td><td>保住階級</td><td>6</td></tr>
+<tr><td>+9 › +10</td><td>40%</td><td>降一階</td><td>保住階級</td><td>6</td></tr>
+<tr><td>+10 › +11</td><td>30%</td><td>維持</td><td>—</td><td>9</td></tr>
+<tr><td>+11 › +12</td><td>25%</td><td>降一階</td><td>—</td><td>9</td></tr>
+<tr><td>+12 › +13</td><td>20%</td><td>維持</td><td>—</td><td>9</td></tr>
+<tr><td>+13 › +14</td><td>15%</td><td>降一階</td><td>—</td><td>9</td></tr>
+<tr><td>+14 › +15</td><td>10%</td><td>降一階</td><td>—</td><td>9</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>依保底格數的下一次強化成功機率</caption>
+<thead><tr><th>保底</th><th>下一次強化成功機率</th></tr></thead><tbody>
+<tr><td>0 ~ 9</td><td>表中機率（+10 › +11 30% · +11 › +12 25% · +12 › +13 20% · +13 › +14 15% · +14 › +15 10%）</td></tr>
+<tr><td>10</td><td>100%</td></tr>
+</tbody></table></div>
+<h2 id="legendReroll">傳說重鍊石</h2>
+<p>使用1個傳說重鍊石，重新擲出所持有的一件傳說裝備的四行數值。每件傳說的行種類固定不變，新數值會覆蓋原數值。無法復原。</p>
+<p>四行各自獨立擲出。每行數值 = 區間最小值 + (最大值 − 最小值) × r，r在0~1之間均勻抽取（均勻分布）。區間為該傳說裝備的物品等級所開啟的最高區間。</p>
+<p>數值四捨五入為整數，因此區間兩端的值（最小值・最大值）各自的機率是中間值的一半。最小值與最大值相差k時，兩端的值各為1/(2k)，中間的值各為1/k；最小值與最大值相同時，該值為100%。</p>
+<p>傳說裝備的物品等級會隨穿戴者本次輪迴的最高進度提升。開啟新區間時，擲出的位置r保持不變，只把數值移到新區間。</p>
+<p>首次獲得傳說裝備時，武器・戒指各免費獲得1個重鍊石。重鍊優先使用免費重鍊石。</p>
+<p>表格欄位：數值範圍（兩端的值各自的機率 / 中間的值各自的機率）。</p>
+<div class="tw"><table>
+<caption>王之大劍 · 鐵塊大劍 · 赤紅戰斧 · 月之戰斧 · 鐘形釘錘 · 隕石釘錘 · 星辰法杖 · 古木之杖 · 燭臺魔杖 · 明鏡魔杖 · 羽翼長弓 · 鹿角長弓 · 城牆十字弓 · 齒輪十字弓 · 毒牙匕首 · 琉璃匕首</caption>
+<thead><tr><th>物品等級</th><th>傷害提升 +N%</th><th>火焰傷害 +N%</th><th>攻擊速度 +N%</th><th>物理傷害的 N% 轉為吸血</th></tr></thead><tbody>
+<tr><td>1~11</td><td>5~10（10% / 20%）</td><td>8~12（12.5% / 25%）</td><td>4~6（25% / 50%）</td><td>1（100%）</td></tr>
+<tr><td>12~24</td><td>11~20（5.56% / 11.11%）</td><td>13~20（7.14% / 14.29%）</td><td>7~10（16.67% / 33.33%）</td><td>2（100%）</td></tr>
+<tr><td>25~39</td><td>21~35（3.57% / 7.14%）</td><td>21~30（5.56% / 11.11%）</td><td>11~15（12.5% / 25%）</td><td>3（100%）</td></tr>
+<tr><td>40~54</td><td>36~55（2.63% / 5.26%）</td><td>31~42（4.55% / 9.09%）</td><td>16~22（8.33% / 16.67%）</td><td>4（100%）</td></tr>
+<tr><td>55~62</td><td>56~80（2.08% / 4.17%）</td><td>43~60（2.94% / 5.88%）</td><td>23~30（7.14% / 14.29%）</td><td>5~6（50% / –）</td></tr>
+<tr><td>63~70</td><td>81~98（2.94% / 5.88%）</td><td>61~73（4.17% / 8.33%）</td><td>31~37（8.33% / 16.67%）</td><td>7（100%）</td></tr>
+<tr><td>71~78</td><td>99~120（2.38% / 4.76%）</td><td>74~89（3.33% / 6.67%）</td><td>38~45（7.14% / 14.29%）</td><td>8~9（50% / –）</td></tr>
+<tr><td>79~86</td><td>121~146（2% / 4%）</td><td>90~109（2.63% / 5.26%）</td><td>46~55（5.56% / 11.11%）</td><td>10~11（50% / –）</td></tr>
+<tr><td>87~94</td><td>147~178（1.61% / 3.23%）</td><td>110~133（2.17% / 4.35%）</td><td>56~67（4.55% / 9.09%）</td><td>12~13（50% / –）</td></tr>
+<tr><td>95~102</td><td>179~217（1.32% / 2.63%）</td><td>134~162（1.79% / 3.57%）</td><td>68~82（3.57% / 7.14%）</td><td>14~16（25% / 50%）</td></tr>
+<tr><td>103~110</td><td>218~265（1.06% / 2.13%）</td><td>163~198（1.43% / 2.86%）</td><td>83~100（2.94% / 5.88%）</td><td>17~20（16.67% / 33.33%）</td></tr>
+<tr><td>111~118</td><td>266~323（0.88% / 1.75%）</td><td>199~242（1.16% / 2.33%）</td><td>101~122（2.38% / 4.76%）</td><td>21~24（16.67% / 33.33%）</td></tr>
+<tr><td>119~126</td><td>324~394（0.71% / 1.43%）</td><td>243~295（0.96% / 1.92%）</td><td>123~149（1.92% / 3.85%）</td><td>25~29（12.5% / 25%）</td></tr>
+<tr><td>127以上</td><td>395~481（0.58% / 1.16%）</td><td>296~360（0.78% / 1.56%）</td><td>150~182（1.56% / 3.13%）</td><td>30~35（10% / 20%）</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>誓約之戒</caption>
+<thead><tr><th>物品等級</th><th>傷害提升 +N%</th><th>額外火焰傷害 +N</th><th>所有屬性 +N</th><th>所有抗性 +N</th></tr></thead><tbody>
+<tr><td>1~11</td><td>5~10（10% / 20%）</td><td>2~5（16.67% / 33.33%）</td><td>1~2（50% / –）</td><td>3~5（25% / 50%）</td></tr>
+<tr><td>12~24</td><td>11~20（5.56% / 11.11%）</td><td>6~14（6.25% / 12.5%）</td><td>3~4（50% / –）</td><td>6~9（16.67% / 33.33%）</td></tr>
+<tr><td>25~39</td><td>21~35（3.57% / 7.14%）</td><td>15~30（3.33% / 6.67%）</td><td>5~7（25% / 50%）</td><td>10~13（16.67% / 33.33%）</td></tr>
+<tr><td>40~54</td><td>36~55（2.63% / 5.26%）</td><td>31~55（2.08% / 4.17%）</td><td>8~11（16.67% / 33.33%）</td><td>17~23（8.33% / 16.67%）</td></tr>
+<tr><td>55~62</td><td>56~80（2.08% / 4.17%）</td><td>56~90（1.47% / 2.94%）</td><td>12~16（12.5% / 25%）</td><td>24~32（6.25% / 12.5%）</td></tr>
+<tr><td>63~70</td><td>81~98（2.94% / 5.88%）</td><td>91~110（2.63% / 5.26%）</td><td>17~20（16.67% / 33.33%）</td><td>33~39（8.33% / 16.67%）</td></tr>
+<tr><td>71~78</td><td>99~120（2.38% / 4.76%）</td><td>111~134（2.17% / 4.35%）</td><td>21~24（16.67% / 33.33%）</td><td>40~48（6.25% / 12.5%）</td></tr>
+<tr><td>79~86</td><td>121~146（2% / 4%）</td><td>135~163（1.79% / 3.57%）</td><td>25~29（12.5% / 25%）</td><td>49~59（5% / 10%）</td></tr>
+<tr><td>87~94</td><td>147~178（1.61% / 3.23%）</td><td>164~199（1.43% / 2.86%）</td><td>30~35（10% / 20%）</td><td>60~72（4.17% / 8.33%）</td></tr>
+<tr><td>95~102</td><td>179~217（1.32% / 2.63%）</td><td>200~243（1.16% / 2.33%）</td><td>36~43（7.14% / 14.29%）</td><td>73~88（3.33% / 6.67%）</td></tr>
+<tr><td>103~110</td><td>218~265（1.06% / 2.13%）</td><td>244~296（0.96% / 1.92%）</td><td>44~52（6.25% / 12.5%）</td><td>89~107（2.78% / 5.56%）</td></tr>
+<tr><td>111~118</td><td>266~323（0.88% / 1.75%）</td><td>297~361（0.78% / 1.56%）</td><td>53~63（5% / 10%）</td><td>108~131（2.17% / 4.35%）</td></tr>
+<tr><td>119~126</td><td>324~394（0.71% / 1.43%）</td><td>362~440（0.64% / 1.28%）</td><td>64~77（3.85% / 7.69%）</td><td>132~160（1.79% / 3.57%）</td></tr>
+<tr><td>127以上</td><td>395~481（0.58% / 1.16%）</td><td>441~537（0.52% / 1.04%）</td><td>78~94（3.13% / 6.25%）</td><td>161~195（1.47% / 2.94%）</td></tr>
+</tbody></table></div>
+<h2 id="enhanceBonus">強化獎勵詞綴</h2>
+<p>裝備每次達到 +10 · +15 時，各附加 1 條獎勵詞綴（傳說裝備除外）。會附加哪條詞綴，每件裝備從一開始就已決定，無法重抽，強化失敗也不會消失。用傳承移動階級時，附加的是接收裝備已決定的詞綴。</p>
+<p>詞綴從下表的候選中以相同機率決定。裝備上已有的詞綴不列入候選（其餘候選機率相同），+15 的詞綴從扣除 +10 已附加詞綴後的候選中決定。表中機率為沒有候選被扣除時的數值。</p>
+<p>數值不含機率：等於該裝備物品等級下同一詞綴一般出現時的平均值，乘以下方比例。</p>
+<div class="tw"><table>
+<caption>騎士</caption>
+<thead><tr><th>部位</th><th>候選詞綴與機率</th></tr></thead><tbody>
+<tr><td>武器 · 頭盔 · 手套 · 靴子</td><td>最大HP +N 33.33% · 體力 +N 33.33% · 力量 +N 33.33%</td></tr>
+<tr><td>鎧甲</td><td>所有屬性 +N 25% · 最大HP +N 25% · 體力 +N 25% · 力量 +N 25%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>法師</caption>
+<thead><tr><th>部位</th><th>候選詞綴與機率</th></tr></thead><tbody>
+<tr><td>武器 · 頭盔 · 手套 · 靴子</td><td>最大HP +N 33.33% · 體力 +N 33.33% · 精神 +N 33.33%</td></tr>
+<tr><td>鎧甲</td><td>所有屬性 +N 25% · 最大HP +N 25% · 體力 +N 25% · 精神 +N 25%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>獵人</caption>
+<thead><tr><th>部位</th><th>候選詞綴與機率</th></tr></thead><tbody>
+<tr><td>武器 · 頭盔 · 手套 · 靴子</td><td>最大HP +N 33.33% · 體力 +N 33.33% · 敏捷 +N 33.33%</td></tr>
+<tr><td>鎧甲</td><td>所有屬性 +N 25% · 最大HP +N 25% · 體力 +N 25% · 敏捷 +N 25%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>獎勵詞綴的數值</caption>
+<thead><tr><th>詞綴</th><th>相對一般詞綴平均值</th></tr></thead><tbody>
+<tr><td>最大HP +N</td><td>46.7%</td></tr>
+<tr><td>體力 +N</td><td>59.5%</td></tr>
+<tr><td>力量 +N</td><td>46.5%</td></tr>
+<tr><td>所有屬性 +N</td><td>61%</td></tr>
+<tr><td>精神 +N</td><td>49.5%</td></tr>
+<tr><td>敏捷 +N</td><td>39.1%</td></tr>
+</tbody></table></div>
+<h2 id="summon">第七隻召喚獸贈禮</h2>
+<p>在Lv77開放召喚獸第7欄時，將從下列召喚獸中獲贈一隻。每個角色的結果固定，無法重抽；已招募的召喚獸會從候選中排除（其餘候選機率相同）。若已全部擁有，則改為獲得100個強化石。</p>
+<p>其他召喚獸以100個強化石的固定價格自選招募，沒有隨機購買。</p>
+<p>召喚獸強化不會失敗。每階生命·傷害 +4%，最高 +10，強化至 +10 共需484個強化石。</p>
+<div class="tw"><table>
+<thead><tr><th>召喚獸</th><th>機率</th></tr></thead><tbody>
+<tr><td>墓地巨人</td><td>50%</td></tr>
+<tr><td>鎖鏈處刑者</td><td>50%</td></tr>
+</tbody></table></div>
+</main>
+</body>
+</html>

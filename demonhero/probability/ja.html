@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>悪魔召喚ヒーロー育成 — 確率表記</title>
+<style>:root{--bg:#f7f5f1;--fg:#1d1a17;--dim:#5d564e;--line:#d9d2c7;--head:#8a5a14;--notice:#9a2f1c}
+@media (prefers-color-scheme:dark){:root{--bg:#141217;--fg:#ece6dc;--dim:#a99f93;--line:#3a343c;--head:#e8b45a;--notice:#ff9a7a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,-apple-system,"Noto Sans KR","Noto Sans JP","Noto Sans TC","Noto Sans SC",sans-serif}
+main{max-width:960px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:8px 0 4px}h2{font-size:21px;margin:40px 0 8px;color:var(--head);border-bottom:1px solid var(--line);padding-bottom:6px}
+p{margin:8px 0;color:var(--dim)}.notice{color:var(--notice);font-weight:700}nav{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;margin-bottom:8px}nav a{color:var(--dim)}nav a[aria-current]{color:var(--fg);font-weight:700}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:10px 0;font-size:14px}th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--head)}caption{text-align:left;font-weight:700;padding:4px 0}</style>
+</head>
+<body>
+<main>
+<nav aria-label="language"><a href="ko.html">한국어</a><a href="en.html">English</a><a href="zh-TW.html">繁體中文</a><a href="ja.html" aria-current="page">日本語</a><a href="de.html">Deutsch</a><a href="zh-CN.html">简体中文</a><a href="es.html">Español</a><a href="it.html">Italiano</a><a href="pl.html">Polski</a></nav>
+<p class="notice">確率型アイテムを含みます</p>
+<h1>悪魔召喚ヒーロー育成 · 確率表記</h1>
+<p>ゴールド·魔晶石·聖水はショップの商品でも入手できるため、これらを使って得られるランダムな結果の確率をすべて公開しています。</p>
+<p>以下の数値は、ゲーム内のデータから直接計算して表示しています（バージョン1.1.0）。期間限定ではなく、常時適用されます。</p>
+<h2 id="rarity">アイテムのレアリティ確率</h2>
+<p>「戦利品袋をもう1つ」で受け取る袋も同じ確率です。</p>
+<p>ユニークまたはセットが選ばれても、その部位·アイテムレベルに該当する候補がない場合はレアになります。</p>
+<div class="tw"><table>
+<thead><tr><th>入手経路</th><th>ノーマル</th><th>マジック</th><th>レア</th><th>セット</th><th>ユニーク</th></tr></thead><tbody>
+<tr><td>オフライン戦利品袋</td><td>62.01%</td><td>28.01%</td><td>9.98%</td><td>0%</td><td>0%</td></tr>
+<tr><td>戦利品袋（上等な袋習得時）</td><td>62.01%</td><td>28%</td><td>9.98%</td><td>0.0055%</td><td>0.0055%</td></tr>
+<tr><td>闇市</td><td>0%</td><td>78%</td><td>20%</td><td>0.5%</td><td>1.5%</td></tr>
+</tbody></table></div>
+<h2 id="gamble">闇市</h2>
+<p>陳列棚の補充時（毎日0時·8時·16時に更新、または魔晶石による即時更新）に、枠ごとのレアリティが決まります。枠は「？」で伏せられており、購入すると公開されます。レアリティの確率は、補充時点の天井カウントと闇市の常連ランクによって決まります。</p>
+<p>天井：セット·ユニーク以外の枠を購入するたびに1ずつ加算され、セットまたはユニークを購入すると0に戻ります。カウントが30回増えるごとに、セット·ユニークの重みが×2ずつ乗算されます（上限なし）。</p>
+<p>アイテムレベル：現在のステージ-3~+3の整数から均等</p>
+<p>部位：陳列棚の枠ごとに固定（武器2枠 · 防具4枠 · アクセサリー2枠）</p>
+<p>ベースアイテム：その部位で自分の職業が使えるベースアイテムから均等</p>
+<p>ユニーク：その部位·アイテムレベルで出現しうるユニークから均等</p>
+<p>セット：その部位·アイテムレベルで出現しうるセット部位から均等</p>
+<p>魔晶石で即時更新した陳列棚も同じ確率です。</p>
+<div class="tw"><table>
+<thead><tr><th>闇市の常連ランク</th><th>ノーマル</th><th>マジック</th><th>レア</th><th>セット</th><th>ユニーク</th></tr></thead><tbody>
+<tr><td>0</td><td>0%</td><td>78%</td><td>20%</td><td>0.5%</td><td>1.5%</td></tr>
+<tr><td>1</td><td>0%</td><td>77.23%</td><td>19.8%</td><td>0.99%</td><td>1.98%</td></tr>
+<tr><td>2</td><td>0%</td><td>76.47%</td><td>19.61%</td><td>1.47%</td><td>2.45%</td></tr>
+<tr><td>3</td><td>0%</td><td>75.73%</td><td>19.42%</td><td>1.94%</td><td>2.91%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<thead><tr><th>補充時の天井カウント</th><th>ノーマル</th><th>マジック</th><th>レア</th><th>セット</th><th>ユニーク</th></tr></thead><tbody>
+<tr><td>0~29回</td><td>0%</td><td>78%</td><td>20%</td><td>0.5%</td><td>1.5%</td></tr>
+<tr><td>30~59回</td><td>0%</td><td>76.47%</td><td>19.61%</td><td>0.98%</td><td>2.94%</td></tr>
+<tr><td>60~89回</td><td>0%</td><td>73.58%</td><td>18.87%</td><td>1.89%</td><td>5.66%</td></tr>
+<tr><td>90~119回</td><td>0%</td><td>68.42%</td><td>17.54%</td><td>3.51%</td><td>10.53%</td></tr>
+<tr><td>120~149回</td><td>0%</td><td>60%</td><td>15.38%</td><td>6.15%</td><td>18.46%</td></tr>
+</tbody></table></div>
+<h2 id="sack">戦利品袋</h2>
+<p>袋1つにつきアイテム3個（戦利品袋ランクごとに+1）</p>
+<p>アイテムレベル：安全ステージ-2~+3の整数から均等</p>
+<p>部位：8部位から均等 · ベースアイテム：その部位のベースアイテムから均等</p>
+<p>宝石：袋ごとに2%の確率で1個 · 5種から均等 · グレードは現在の難易度の基本グレード</p>
+<p>ユニークの選択重み：基本1、同じユニークを3回以上入手済みなら×0.5、そのユニークの印を10個以上所持していれば×2</p>
+<h2 id="affix">オプション</h2>
+<p>選出方法：決まった種類（接頭OP·接尾OP）のうち、この部位·アイテムレベルで解放されており、ベースアイテムの条件を満たし、すでに付いているオプションと重複しない候補から均等に選ばれます。同じグループ（属性ダメージ増加·耐性）は2個まで付きます。</p>
+<p>数値：ティア範囲の最小値~最大値の間で均等</p>
+<p>スキル+1のベースアイテム（ワンド）：接頭OPを選ぶ際、まず20%の確率で「熟達の」</p>
+<p>「熟達の」はT3から存在するため、範囲内のそれより低いティアの分は除かれます。</p>
+<p>そのオプションで解放されているティアのうち上位5つのみが出現し、低い順に40 : 30 : 18 : 9 : 3の比率です。マジックアイテムでは、解放されている最上位ティアの重みが×2になります。</p>
+<div class="tw"><table>
+<thead><tr><th>オプション数</th><th></th></tr></thead><tbody>
+<tr><td>マジック</td><td>接頭OPのみ 37.5% · 接尾OPのみ 37.5% · 両方 25%</td></tr>
+<tr><td>レア</td><td>3~5個から均等（各33.33%） · 1つ付くごとに接頭OP·接尾OPが各50%（種類ごとに最大3個）</td></tr>
+<tr><td>セット</td><td>固定OP + ランダムな接尾OP 1つ</td></tr>
+<tr><td>ユニーク</td><td>固定OPのみ（ランダム要素なし）</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>部位別の1つ目のOP候補数（接頭 / 接尾） — 選択確率は1 ÷ 候補数</caption>
+<thead><tr><th></th><th>ilvl 1</th><th>ilvl 25</th><th>ilvl 55</th><th>ilvl 87</th><th>ilvl 119</th><th>ilvl 150</th></tr></thead><tbody>
+<tr><td>武器</td><td>16~17 / 8</td><td>17~18 / 8</td><td>17~18 / 8</td><td>17~18 / 8</td><td>17~18 / 8</td><td>17~18 / 8</td></tr>
+<tr><td>オフハンド</td><td>10 / 10~14</td><td>10 / 10~14</td><td>10 / 10~14</td><td>10 / 10~14</td><td>10 / 10~14</td><td>10 / 10~14</td></tr>
+<tr><td>兜</td><td>4 / 17</td><td>5 / 17</td><td>5 / 17</td><td>5 / 17</td><td>5 / 17</td><td>5 / 17</td></tr>
+<tr><td>鎧</td><td>3 / 15</td><td>3 / 15</td><td>3 / 15</td><td>3 / 15</td><td>3 / 15</td><td>3 / 15</td></tr>
+<tr><td>手袋</td><td>11 / 15</td><td>11 / 15</td><td>11 / 15</td><td>11 / 15</td><td>11 / 15</td><td>11 / 15</td></tr>
+<tr><td>ブーツ</td><td>2 / 14</td><td>2 / 14</td><td>2 / 14</td><td>2 / 14</td><td>2 / 14</td><td>2 / 14</td></tr>
+<tr><td>指輪</td><td>8 / 17</td><td>8 / 17</td><td>8 / 17</td><td>8 / 17</td><td>8 / 17</td><td>8 / 17</td></tr>
+<tr><td>アミュレット</td><td>12 / 19</td><td>13 / 19</td><td>13 / 19</td><td>13 / 19</td><td>13 / 19</td><td>13 / 19</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<thead><tr><th>OPティアの確率</th><th>最上位</th><th>最上位-1</th><th>最上位-2</th><th>最上位-3</th><th>最上位-4</th></tr></thead><tbody>
+<tr><td>解放ティア1個</td><td>100%</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>解放ティア1個 （マジック）</td><td>100%</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>解放ティア2個</td><td>42.86%</td><td>57.14%</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>解放ティア2個 （マジック）</td><td>60%</td><td>40%</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>解放ティア3個</td><td>20.45%</td><td>34.09%</td><td>45.45%</td><td>–</td><td>–</td></tr>
+<tr><td>解放ティア3個 （マジック）</td><td>33.96%</td><td>28.3%</td><td>37.74%</td><td>–</td><td>–</td></tr>
+<tr><td>解放ティア4個</td><td>9.28%</td><td>18.56%</td><td>30.93%</td><td>41.24%</td><td>–</td></tr>
+<tr><td>解放ティア4個 （マジック）</td><td>16.98%</td><td>16.98%</td><td>28.3%</td><td>37.74%</td><td>–</td></tr>
+<tr><td>解放ティア5個以上</td><td>3%</td><td>9%</td><td>18%</td><td>30%</td><td>40%</td></tr>
+<tr><td>解放ティア5個以上 （マジック）</td><td>5.83%</td><td>8.74%</td><td>17.48%</td><td>29.13%</td><td>38.83%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>武器のOP候補</caption>
+<thead><tr><th>オプション</th><th>種類</th><th>効果</th><th>解放ilvl</th><th>条件</th></tr></thead><tbody>
+<tr><td>鋭い</td><td>接頭OP</td><td>ダメージ増加 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>残忍な</td><td>接頭OP</td><td>追加物理ダメージ +N</td><td>1</td><td>–</td></tr>
+<tr><td>炎の</td><td>接頭OP</td><td>追加火炎ダメージ +N</td><td>1</td><td>–</td></tr>
+<tr><td>霜の</td><td>接頭OP</td><td>追加冷気ダメージ +N</td><td>1</td><td>–</td></tr>
+<tr><td>雷の</td><td>接頭OP</td><td>追加雷ダメージ +1–N</td><td>1</td><td>–</td></tr>
+<tr><td>毒牙の</td><td>接頭OP</td><td>追加毒ダメージ +N（5秒）</td><td>1</td><td>–</td></tr>
+<tr><td>炎をまとう</td><td>接頭OP</td><td>火炎ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>霜をまとう</td><td>接頭OP</td><td>冷気ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>雷をまとう</td><td>接頭OP</td><td>雷ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>毒をまとう</td><td>接頭OP</td><td>毒ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>素早い</td><td>接頭OP</td><td>攻撃速度 +N%</td><td>1</td><td>ロングソード·バトルアックス·メイス·木の杖·ワンド·ロングボウ·クロスボウ·短剣専用</td></tr>
+<tr><td>流麗な</td><td>接頭OP</td><td>詠唱速度 +N%</td><td>1</td><td>木の杖·ワンド専用</td></tr>
+<tr><td>致命の</td><td>接頭OP</td><td>クリティカル率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>無慈悲な</td><td>接頭OP</td><td>クリティカルダメージ +N%</td><td>1</td><td>–</td></tr>
+<tr><td>貫く</td><td>接頭OP</td><td>耐性貫通 N（全属性）</td><td>1</td><td>ロングソード·バトルアックス·メイス·木の杖·ワンド·ロングボウ·クロスボウ·短剣専用</td></tr>
+<tr><td>熟達の</td><td>接頭OP</td><td>全スキルレベル +N</td><td>25</td><td>–</td></tr>
+<tr><td>専心の</td><td>接頭OP</td><td>ランダム系統（A·B·C 各33.33%）スキルレベル +N</td><td>1</td><td>–</td></tr>
+<tr><td>広域の</td><td>接頭OP</td><td>範囲半径 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>雄牛の</td><td>接尾OP</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>筋力の</td><td>接尾OP</td><td>筋力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷の</td><td>接尾OP</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>体力の</td><td>接尾OP</td><td>体力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神の</td><td>接尾OP</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>ヒルの</td><td>接尾OP</td><td>物理ダメージのN%をライフ吸収</td><td>1</td><td>–</td></tr>
+<tr><td>持続の</td><td>接尾OP</td><td>状態異常持続 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>処刑人の</td><td>接尾OP</td><td>HP30%以下の敵へのダメージ +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>オフハンドのOP候補</caption>
+<thead><tr><th>オプション</th><th>種類</th><th>効果</th><th>解放ilvl</th><th>条件</th></tr></thead><tbody>
+<tr><td>鋭い</td><td>接頭OP</td><td>ダメージ増加 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>炎をまとう</td><td>接頭OP</td><td>火炎ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>霜をまとう</td><td>接頭OP</td><td>冷気ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>雷をまとう</td><td>接頭OP</td><td>雷ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>毒をまとう</td><td>接頭OP</td><td>毒ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>素早い</td><td>接頭OP</td><td>攻撃速度 +N%</td><td>1</td><td>矢筒専用</td></tr>
+<tr><td>流麗な</td><td>接頭OP</td><td>詠唱速度 +N%</td><td>1</td><td>オーブ専用</td></tr>
+<tr><td>無慈悲な</td><td>接頭OP</td><td>クリティカルダメージ +N%</td><td>1</td><td>–</td></tr>
+<tr><td>貫く</td><td>接頭OP</td><td>耐性貫通 N（全属性）</td><td>1</td><td>オーブ·矢筒専用</td></tr>
+<tr><td>専心の</td><td>接頭OP</td><td>ランダム系統（A·B·C 各33.33%）スキルレベル +N</td><td>1</td><td>–</td></tr>
+<tr><td>頑丈な</td><td>接頭OP</td><td>防御力 +N%</td><td>1</td><td>ラウンドシールド専用</td></tr>
+<tr><td>棘のある</td><td>接頭OP</td><td>近接攻撃者にNダメージ反射</td><td>1</td><td>ラウンドシールド専用</td></tr>
+<tr><td>広域の</td><td>接頭OP</td><td>範囲半径 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>雄牛の</td><td>接尾OP</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>筋力の</td><td>接尾OP</td><td>筋力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷の</td><td>接尾OP</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>体力の</td><td>接尾OP</td><td>体力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神の</td><td>接尾OP</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>火除けの</td><td>接尾OP</td><td>火炎耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>霜除けの</td><td>接尾OP</td><td>冷気耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>雷除けの</td><td>接尾OP</td><td>雷耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>毒除けの</td><td>接尾OP</td><td>毒耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>祝福の</td><td>接尾OP</td><td>全耐性 +N</td><td>1</td><td>ラウンドシールド専用</td></tr>
+<tr><td>泉の</td><td>接尾OP</td><td>リソース回復 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>城壁の</td><td>接尾OP</td><td>ブロック率 +N%</td><td>1</td><td>ラウンドシールド専用</td></tr>
+<tr><td>鉄壁の</td><td>接尾OP</td><td>ブロック時ダメージ軽減 +N%</td><td>1</td><td>ラウンドシールド専用</td></tr>
+<tr><td>不屈の</td><td>接尾OP</td><td>被ダメージ −N%</td><td>1</td><td>ラウンドシールド専用</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>兜のOP候補</caption>
+<thead><tr><th>オプション</th><th>種類</th><th>効果</th><th>解放ilvl</th><th>条件</th></tr></thead><tbody>
+<tr><td>熟達の</td><td>接頭OP</td><td>全スキルレベル +N</td><td>25</td><td>–</td></tr>
+<tr><td>専心の</td><td>接頭OP</td><td>ランダム系統（A·B·C 各33.33%）スキルレベル +N</td><td>1</td><td>–</td></tr>
+<tr><td>頑丈な</td><td>接頭OP</td><td>防御力 +N%</td><td>1</td><td>兜·フード·冠専用</td></tr>
+<tr><td>棘のある</td><td>接頭OP</td><td>近接攻撃者にNダメージ反射</td><td>1</td><td>兜·フード·冠専用</td></tr>
+<tr><td>堅固な</td><td>接頭OP</td><td>防御力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>雄牛の</td><td>接尾OP</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>巨人の</td><td>接尾OP</td><td>最大HP +N%</td><td>1</td><td>–</td></tr>
+<tr><td>筋力の</td><td>接尾OP</td><td>筋力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷の</td><td>接尾OP</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>体力の</td><td>接尾OP</td><td>体力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神の</td><td>接尾OP</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>火除けの</td><td>接尾OP</td><td>火炎耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>霜除けの</td><td>接尾OP</td><td>冷気耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>雷除けの</td><td>接尾OP</td><td>雷耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>毒除けの</td><td>接尾OP</td><td>毒耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>再生の</td><td>接尾OP</td><td>毎秒HPN回復</td><td>1</td><td>–</td></tr>
+<tr><td>泉の</td><td>接尾OP</td><td>リソース回復 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>倹約の</td><td>接尾OP</td><td>スキルのリソース消費 −N%</td><td>1</td><td>–</td></tr>
+<tr><td>時の</td><td>接尾OP</td><td>クールタイム短縮 N%</td><td>1</td><td>–</td></tr>
+<tr><td>幸運の</td><td>接尾OP</td><td>マジック発見率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>不屈の</td><td>接尾OP</td><td>被ダメージ −N%</td><td>1</td><td>兜·フード·冠専用</td></tr>
+<tr><td>学びの</td><td>接尾OP</td><td>獲得経験値 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>鎧のOP候補</caption>
+<thead><tr><th>オプション</th><th>種類</th><th>効果</th><th>解放ilvl</th><th>条件</th></tr></thead><tbody>
+<tr><td>頑丈な</td><td>接頭OP</td><td>防御力 +N%</td><td>1</td><td>プレートアーマー·チェインメイル·革鎧·ローブ専用</td></tr>
+<tr><td>棘のある</td><td>接頭OP</td><td>近接攻撃者にNダメージ反射</td><td>1</td><td>プレートアーマー·チェインメイル·革鎧·ローブ専用</td></tr>
+<tr><td>堅固な</td><td>接頭OP</td><td>防御力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>雄牛の</td><td>接尾OP</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>巨人の</td><td>接尾OP</td><td>最大HP +N%</td><td>1</td><td>–</td></tr>
+<tr><td>筋力の</td><td>接尾OP</td><td>筋力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷の</td><td>接尾OP</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>体力の</td><td>接尾OP</td><td>体力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神の</td><td>接尾OP</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>万能の</td><td>接尾OP</td><td>全ステータス +N</td><td>1</td><td>–</td></tr>
+<tr><td>火除けの</td><td>接尾OP</td><td>火炎耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>霜除けの</td><td>接尾OP</td><td>冷気耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>雷除けの</td><td>接尾OP</td><td>雷耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>毒除けの</td><td>接尾OP</td><td>毒耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>祝福の</td><td>接尾OP</td><td>全耐性 +N</td><td>1</td><td>プレートアーマー·チェインメイル·革鎧·ローブ専用</td></tr>
+<tr><td>再生の</td><td>接尾OP</td><td>毎秒HPN回復</td><td>1</td><td>–</td></tr>
+<tr><td>狐の</td><td>接尾OP</td><td>回避値 +N</td><td>1</td><td>–</td></tr>
+<tr><td>不屈の</td><td>接尾OP</td><td>被ダメージ −N%</td><td>1</td><td>プレートアーマー·チェインメイル·革鎧·ローブ専用</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>手袋のOP候補</caption>
+<thead><tr><th>オプション</th><th>種類</th><th>効果</th><th>解放ilvl</th><th>条件</th></tr></thead><tbody>
+<tr><td>鋭い</td><td>接頭OP</td><td>ダメージ増加 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>残忍な</td><td>接頭OP</td><td>追加物理ダメージ +N</td><td>1</td><td>–</td></tr>
+<tr><td>炎をまとう</td><td>接頭OP</td><td>火炎ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>霜をまとう</td><td>接頭OP</td><td>冷気ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>雷をまとう</td><td>接頭OP</td><td>雷ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>毒をまとう</td><td>接頭OP</td><td>毒ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>素早い</td><td>接頭OP</td><td>攻撃速度 +N%</td><td>1</td><td>ガントレット·革手袋·絹の手袋専用</td></tr>
+<tr><td>流麗な</td><td>接頭OP</td><td>詠唱速度 +N%</td><td>1</td><td>ガントレット·革手袋·絹の手袋専用</td></tr>
+<tr><td>致命の</td><td>接頭OP</td><td>クリティカル率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>頑丈な</td><td>接頭OP</td><td>防御力 +N%</td><td>1</td><td>ガントレット·革手袋·絹の手袋専用</td></tr>
+<tr><td>堅固な</td><td>接頭OP</td><td>防御力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>雄牛の</td><td>接尾OP</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>筋力の</td><td>接尾OP</td><td>筋力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷の</td><td>接尾OP</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>体力の</td><td>接尾OP</td><td>体力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神の</td><td>接尾OP</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>火除けの</td><td>接尾OP</td><td>火炎耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>霜除けの</td><td>接尾OP</td><td>冷気耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>雷除けの</td><td>接尾OP</td><td>雷耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>毒除けの</td><td>接尾OP</td><td>毒耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>再生の</td><td>接尾OP</td><td>毎秒HPN回復</td><td>1</td><td>–</td></tr>
+<tr><td>時の</td><td>接尾OP</td><td>クールタイム短縮 N%</td><td>1</td><td>–</td></tr>
+<tr><td>狐の</td><td>接尾OP</td><td>回避値 +N</td><td>1</td><td>–</td></tr>
+<tr><td>幸運の</td><td>接尾OP</td><td>マジック発見率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>強欲の</td><td>接尾OP</td><td>ゴールド発見率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>持続の</td><td>接尾OP</td><td>状態異常持続 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>ブーツのOP候補</caption>
+<thead><tr><th>オプション</th><th>種類</th><th>効果</th><th>解放ilvl</th><th>条件</th></tr></thead><tbody>
+<tr><td>頑丈な</td><td>接頭OP</td><td>防御力 +N%</td><td>1</td><td>すね当て·ブーツ·絹の靴専用</td></tr>
+<tr><td>堅固な</td><td>接頭OP</td><td>防御力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>雄牛の</td><td>接尾OP</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>筋力の</td><td>接尾OP</td><td>筋力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷の</td><td>接尾OP</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>体力の</td><td>接尾OP</td><td>体力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神の</td><td>接尾OP</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>火除けの</td><td>接尾OP</td><td>火炎耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>霜除けの</td><td>接尾OP</td><td>冷気耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>雷除けの</td><td>接尾OP</td><td>雷耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>毒除けの</td><td>接尾OP</td><td>毒耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>再生の</td><td>接尾OP</td><td>毎秒HPN回復</td><td>1</td><td>–</td></tr>
+<tr><td>風の</td><td>接尾OP</td><td>移動速度 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>狐の</td><td>接尾OP</td><td>回避値 +N</td><td>1</td><td>–</td></tr>
+<tr><td>幸運の</td><td>接尾OP</td><td>マジック発見率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>強欲の</td><td>接尾OP</td><td>ゴールド発見率 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>指輪のOP候補</caption>
+<thead><tr><th>オプション</th><th>種類</th><th>効果</th><th>解放ilvl</th><th>条件</th></tr></thead><tbody>
+<tr><td>鋭い</td><td>接頭OP</td><td>ダメージ増加 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>残忍な</td><td>接頭OP</td><td>追加物理ダメージ +N</td><td>1</td><td>–</td></tr>
+<tr><td>炎の</td><td>接頭OP</td><td>追加火炎ダメージ +N</td><td>1</td><td>–</td></tr>
+<tr><td>霜の</td><td>接頭OP</td><td>追加冷気ダメージ +N</td><td>1</td><td>–</td></tr>
+<tr><td>雷の</td><td>接頭OP</td><td>追加雷ダメージ +1–N</td><td>1</td><td>–</td></tr>
+<tr><td>毒牙の</td><td>接頭OP</td><td>追加毒ダメージ +N（5秒）</td><td>1</td><td>–</td></tr>
+<tr><td>致命の</td><td>接頭OP</td><td>クリティカル率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>無慈悲な</td><td>接頭OP</td><td>クリティカルダメージ +N%</td><td>1</td><td>–</td></tr>
+<tr><td>雄牛の</td><td>接尾OP</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>筋力の</td><td>接尾OP</td><td>筋力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷の</td><td>接尾OP</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>体力の</td><td>接尾OP</td><td>体力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神の</td><td>接尾OP</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>万能の</td><td>接尾OP</td><td>全ステータス +N</td><td>1</td><td>–</td></tr>
+<tr><td>火除けの</td><td>接尾OP</td><td>火炎耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>霜除けの</td><td>接尾OP</td><td>冷気耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>雷除けの</td><td>接尾OP</td><td>雷耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>毒除けの</td><td>接尾OP</td><td>毒耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>祝福の</td><td>接尾OP</td><td>全耐性 +N</td><td>1</td><td>指輪専用</td></tr>
+<tr><td>ヒルの</td><td>接尾OP</td><td>物理ダメージのN%をライフ吸収</td><td>1</td><td>–</td></tr>
+<tr><td>再生の</td><td>接尾OP</td><td>毎秒HPN回復</td><td>1</td><td>–</td></tr>
+<tr><td>泉の</td><td>接尾OP</td><td>リソース回復 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>幸運の</td><td>接尾OP</td><td>マジック発見率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>強欲の</td><td>接尾OP</td><td>ゴールド発見率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>処刑人の</td><td>接尾OP</td><td>HP30%以下の敵へのダメージ +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>アミュレットのOP候補</caption>
+<thead><tr><th>オプション</th><th>種類</th><th>効果</th><th>解放ilvl</th><th>条件</th></tr></thead><tbody>
+<tr><td>鋭い</td><td>接頭OP</td><td>ダメージ増加 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>炎の</td><td>接頭OP</td><td>追加火炎ダメージ +N</td><td>1</td><td>–</td></tr>
+<tr><td>霜の</td><td>接頭OP</td><td>追加冷気ダメージ +N</td><td>1</td><td>–</td></tr>
+<tr><td>雷の</td><td>接頭OP</td><td>追加雷ダメージ +1–N</td><td>1</td><td>–</td></tr>
+<tr><td>炎をまとう</td><td>接頭OP</td><td>火炎ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>霜をまとう</td><td>接頭OP</td><td>冷気ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>雷をまとう</td><td>接頭OP</td><td>雷ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>毒をまとう</td><td>接頭OP</td><td>毒ダメージ +N%</td><td>1</td><td>グループ属性ダメージ</td></tr>
+<tr><td>流麗な</td><td>接頭OP</td><td>詠唱速度 +N%</td><td>1</td><td>アミュレット専用</td></tr>
+<tr><td>致命の</td><td>接頭OP</td><td>クリティカル率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>無慈悲な</td><td>接頭OP</td><td>クリティカルダメージ +N%</td><td>1</td><td>–</td></tr>
+<tr><td>貫く</td><td>接頭OP</td><td>耐性貫通 N（全属性）</td><td>1</td><td>アミュレット専用</td></tr>
+<tr><td>熟達の</td><td>接頭OP</td><td>全スキルレベル +N</td><td>25</td><td>–</td></tr>
+<tr><td>雄牛の</td><td>接尾OP</td><td>最大HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>巨人の</td><td>接尾OP</td><td>最大HP +N%</td><td>1</td><td>–</td></tr>
+<tr><td>筋力の</td><td>接尾OP</td><td>筋力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>敏捷の</td><td>接尾OP</td><td>敏捷 +N</td><td>1</td><td>–</td></tr>
+<tr><td>体力の</td><td>接尾OP</td><td>体力 +N</td><td>1</td><td>–</td></tr>
+<tr><td>精神の</td><td>接尾OP</td><td>精神 +N</td><td>1</td><td>–</td></tr>
+<tr><td>万能の</td><td>接尾OP</td><td>全ステータス +N</td><td>1</td><td>–</td></tr>
+<tr><td>火除けの</td><td>接尾OP</td><td>火炎耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>霜除けの</td><td>接尾OP</td><td>冷気耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>雷除けの</td><td>接尾OP</td><td>雷耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>毒除けの</td><td>接尾OP</td><td>毒耐性 +N</td><td>1</td><td>グループ耐性</td></tr>
+<tr><td>祝福の</td><td>接尾OP</td><td>全耐性 +N</td><td>1</td><td>アミュレット専用</td></tr>
+<tr><td>ヒルの</td><td>接尾OP</td><td>物理ダメージのN%をライフ吸収</td><td>1</td><td>–</td></tr>
+<tr><td>泉の</td><td>接尾OP</td><td>リソース回復 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>倹約の</td><td>接尾OP</td><td>スキルのリソース消費 −N%</td><td>1</td><td>–</td></tr>
+<tr><td>時の</td><td>接尾OP</td><td>クールタイム短縮 N%</td><td>1</td><td>–</td></tr>
+<tr><td>幸運の</td><td>接尾OP</td><td>マジック発見率 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>持続の</td><td>接尾OP</td><td>状態異常持続 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>学びの</td><td>接尾OP</td><td>獲得経験値 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<h2 id="craft">打ち直し · 刻印</h2>
+<p>全体打ち直し：アイテムのレアリティに応じた新しいオプション構成（上記のOPルール）</p>
+<p>数値打ち直し：オプションとティアはそのまま、数値のみティア範囲内で均等</p>
+<p>ロック打ち直し：ロックしたオプションはそのまま、合計3~5個（均等）になるよう残りを上記ルールで付与</p>
+<p>レアリティ上昇（マジックからレア）：オプションを1~3個均等に追加（最大5個まで）</p>
+<p>刻印：選んだオプションがそのアイテムレベルで解放されている最上位ティアで付き、数値のみ均等</p>
+<p>ソケット追加 · ティア上昇 · 宝石合成 · 宝石回収：ランダム要素なし</p>
+<p>初回の全体打ち直しは無料です。打ち直す装備が武器·オフハンド·手袋·指輪·アミュレットのいずれかであれば、「鋭い」T1が最大値で必ず付き、残りのオプションは上記のOPルールに従います。その他の部位は通常の打ち直しと同じです。</p>
+<h2 id="enhance">装備強化</h2>
+<p>強化は1段階ごとに武器ダメージ ×(1 + 0.06 × 段階)(+15 = ×1.90)、防具は4部位の段階の合計で生命力 ×(1 + 合計 ÷ 120)(4部位とも+15 = ×1.50)、最大+15です。+6から失敗すると1段階下がりますが、+5 · +10は下限でそれ以下には下がらず、装備が消えることはありません。保護券を使うと失敗しても段階を守ります。</p>
+<p>継承は確率のない確定作業です。同じ部位でアイテムレベルが同じか高い+0装備に段階を移し、元の装備は+0になります。強化石 = 保護券を使ってその段階までにかかる強化石の25% × min(1, 上がるアイテムレベル ÷ 10)、四捨五入。</p>
+<p>保護券：失敗して段階が下がるときだけ1枚使われ、段階を守ります（鍛冶屋は+7以上で保護券を使います）。成功確率は変わらず、段階が下がらない失敗には使われません。</p>
+<p>強化石はボス討伐で1日 1 / 2 / 4 個（地上 / 階段1〜50階 / 階段51階以降、全キャラ合計）まで、デイリー5個達成で1個（同じ上限内）。</p>
+<div class="tw"><table>
+<thead><tr><th>段階</th><th>成功</th><th>失敗時</th><th>保護券</th><th>強化石</th></tr></thead><tbody>
+<tr><td>+0 › +1</td><td>100%</td><td>そのまま</td><td>—</td><td>1</td></tr>
+<tr><td>+1 › +2</td><td>90%</td><td>そのまま</td><td>—</td><td>1</td></tr>
+<tr><td>+2 › +3</td><td>80%</td><td>そのまま</td><td>—</td><td>1</td></tr>
+<tr><td>+3 › +4</td><td>70%</td><td>そのまま</td><td>—</td><td>1</td></tr>
+<tr><td>+4 › +5</td><td>60%</td><td>そのまま</td><td>—</td><td>1</td></tr>
+<tr><td>+5 › +6</td><td>60%</td><td>そのまま</td><td>—</td><td>2</td></tr>
+<tr><td>+6 › +7</td><td>55%</td><td>1段階ダウン</td><td>段階を維持</td><td>2</td></tr>
+<tr><td>+7 › +8</td><td>50%</td><td>1段階ダウン</td><td>段階を維持</td><td>2</td></tr>
+<tr><td>+8 › +9</td><td>45%</td><td>1段階ダウン</td><td>段階を維持</td><td>2</td></tr>
+<tr><td>+9 › +10</td><td>40%</td><td>1段階ダウン</td><td>段階を維持</td><td>2</td></tr>
+<tr><td>+10 › +11</td><td>40%</td><td>そのまま</td><td>—</td><td>3</td></tr>
+<tr><td>+11 › +12</td><td>35%</td><td>1段階ダウン</td><td>段階を維持</td><td>3</td></tr>
+<tr><td>+12 › +13</td><td>30%</td><td>1段階ダウン</td><td>段階を維持</td><td>3</td></tr>
+<tr><td>+13 › +14</td><td>25%</td><td>1段階ダウン</td><td>段階を維持</td><td>3</td></tr>
+<tr><td>+14 › +15</td><td>20%</td><td>1段階ダウン</td><td>段階を維持</td><td>3</td></tr>
+</tbody></table></div>
+<h2 id="legend">伝説装備の強化</h2>
+<p>伝説装備は専用の強化表を使います。強化石は同じ段階の通常強化の3倍で、保護券は+10までの強化にだけ使えます。下限（+5 · +10 · +12）で失敗しても段階はそのままなので、+12に上がるとそれより下がりません。最高+15で、装備が消えることはありません。</p>
+<p>天井：伝説装備を+10以上で強化して失敗するたびに、その装備の天井が1ずつ貯まります（最大10）。天井が10になると次の強化は100%成功し、天井は0に戻ります。表の確率で成功した場合、天井はそのまま残ります。</p>
+<p>継承で伝説装備に移せる段階は+10までです（確率のない確定作業）。伝説装備の段階はほかの装備に移せません。</p>
+<div class="tw"><table>
+<thead><tr><th>段階</th><th>成功</th><th>失敗時</th><th>保護券</th><th>強化石</th></tr></thead><tbody>
+<tr><td>+0 › +1</td><td>100%</td><td>そのまま</td><td>—</td><td>3</td></tr>
+<tr><td>+1 › +2</td><td>100%</td><td>そのまま</td><td>—</td><td>3</td></tr>
+<tr><td>+2 › +3</td><td>100%</td><td>そのまま</td><td>—</td><td>3</td></tr>
+<tr><td>+3 › +4</td><td>100%</td><td>そのまま</td><td>—</td><td>3</td></tr>
+<tr><td>+4 › +5</td><td>100%</td><td>そのまま</td><td>—</td><td>3</td></tr>
+<tr><td>+5 › +6</td><td>70%</td><td>そのまま</td><td>—</td><td>6</td></tr>
+<tr><td>+6 › +7</td><td>62%</td><td>1段階ダウン</td><td>段階を維持</td><td>6</td></tr>
+<tr><td>+7 › +8</td><td>55%</td><td>1段階ダウン</td><td>段階を維持</td><td>6</td></tr>
+<tr><td>+8 › +9</td><td>47%</td><td>1段階ダウン</td><td>段階を維持</td><td>6</td></tr>
+<tr><td>+9 › +10</td><td>40%</td><td>1段階ダウン</td><td>段階を維持</td><td>6</td></tr>
+<tr><td>+10 › +11</td><td>30%</td><td>そのまま</td><td>—</td><td>9</td></tr>
+<tr><td>+11 › +12</td><td>25%</td><td>1段階ダウン</td><td>—</td><td>9</td></tr>
+<tr><td>+12 › +13</td><td>20%</td><td>そのまま</td><td>—</td><td>9</td></tr>
+<tr><td>+13 › +14</td><td>15%</td><td>1段階ダウン</td><td>—</td><td>9</td></tr>
+<tr><td>+14 › +15</td><td>10%</td><td>1段階ダウン</td><td>—</td><td>9</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>天井のマス数ごとの次の強化の成功確率</caption>
+<thead><tr><th>天井</th><th>次の強化の成功確率</th></tr></thead><tbody>
+<tr><td>0 ~ 9</td><td>表の確率（+10 › +11 30% · +11 › +12 25% · +12 › +13 20% · +13 › +14 15% · +14 › +15 10%）</td></tr>
+<tr><td>10</td><td>100%</td></tr>
+</tbody></table></div>
+<h2 id="legendReroll">伝説の再錬石</h2>
+<p>伝説の再錬石1個で、所持している伝説装備1つの4行の数値を振り直します。行の種類は伝説ごとに固定で変わらず、新しい数値が前の数値を上書きします。元に戻せません。</p>
+<p>4行はそれぞれ独立して振ります。各行の数値は 区間の最小値 + (最大値 − 最小値) × r で、rは0~1の間から均等に選ばれます（一様分布）。区間はその伝説装備のアイテムレベルが開く最も高い区間です。</p>
+<p>数値は整数に四捨五入します。そのため区間の両端の値（最小値・最大値）は、その間の値の半分の確率です。最小値と最大値の差がkのとき、両端の値はそれぞれ1/(2k)、間の値はそれぞれ1/kで、最小値と最大値が同じならその値が100%です。</p>
+<p>伝説装備のアイテムレベルは、装備者の今回の生での最高進行に合わせて上がります。新しい区間が開くと、振った位置rはそのままで数値だけ新しい区間に移ります。</p>
+<p>伝説装備を初めて手に入れると、武器・指輪それぞれ再錬石を1個無料で受け取ります。再錬は無料の再錬石から使います。</p>
+<p>表のマス：数値の範囲（両端の値それぞれの確率 / 間の値それぞれの確率）。</p>
+<div class="tw"><table>
+<caption>王の大剣 · 鉄塊の大剣 · 紅の斧 · 月の斧 · 鐘のメイス · 隕石のメイス · 星の杖 · 古木の杖 · 燭台のワンド · 鏡のワンド · 翼の弓 · 鹿角の弓 · 城壁のクロスボウ · 歯車のクロスボウ · 毒牙の短剣 · 硝子の短剣</caption>
+<thead><tr><th>アイテムレベル</th><th>ダメージ増加 +N%</th><th>火炎ダメージ +N%</th><th>攻撃速度 +N%</th><th>物理ダメージのN%をライフ吸収</th></tr></thead><tbody>
+<tr><td>1~11</td><td>5~10（10% / 20%）</td><td>8~12（12.5% / 25%）</td><td>4~6（25% / 50%）</td><td>1（100%）</td></tr>
+<tr><td>12~24</td><td>11~20（5.56% / 11.11%）</td><td>13~20（7.14% / 14.29%）</td><td>7~10（16.67% / 33.33%）</td><td>2（100%）</td></tr>
+<tr><td>25~39</td><td>21~35（3.57% / 7.14%）</td><td>21~30（5.56% / 11.11%）</td><td>11~15（12.5% / 25%）</td><td>3（100%）</td></tr>
+<tr><td>40~54</td><td>36~55（2.63% / 5.26%）</td><td>31~42（4.55% / 9.09%）</td><td>16~22（8.33% / 16.67%）</td><td>4（100%）</td></tr>
+<tr><td>55~62</td><td>56~80（2.08% / 4.17%）</td><td>43~60（2.94% / 5.88%）</td><td>23~30（7.14% / 14.29%）</td><td>5~6（50% / –）</td></tr>
+<tr><td>63~70</td><td>81~98（2.94% / 5.88%）</td><td>61~73（4.17% / 8.33%）</td><td>31~37（8.33% / 16.67%）</td><td>7（100%）</td></tr>
+<tr><td>71~78</td><td>99~120（2.38% / 4.76%）</td><td>74~89（3.33% / 6.67%）</td><td>38~45（7.14% / 14.29%）</td><td>8~9（50% / –）</td></tr>
+<tr><td>79~86</td><td>121~146（2% / 4%）</td><td>90~109（2.63% / 5.26%）</td><td>46~55（5.56% / 11.11%）</td><td>10~11（50% / –）</td></tr>
+<tr><td>87~94</td><td>147~178（1.61% / 3.23%）</td><td>110~133（2.17% / 4.35%）</td><td>56~67（4.55% / 9.09%）</td><td>12~13（50% / –）</td></tr>
+<tr><td>95~102</td><td>179~217（1.32% / 2.63%）</td><td>134~162（1.79% / 3.57%）</td><td>68~82（3.57% / 7.14%）</td><td>14~16（25% / 50%）</td></tr>
+<tr><td>103~110</td><td>218~265（1.06% / 2.13%）</td><td>163~198（1.43% / 2.86%）</td><td>83~100（2.94% / 5.88%）</td><td>17~20（16.67% / 33.33%）</td></tr>
+<tr><td>111~118</td><td>266~323（0.88% / 1.75%）</td><td>199~242（1.16% / 2.33%）</td><td>101~122（2.38% / 4.76%）</td><td>21~24（16.67% / 33.33%）</td></tr>
+<tr><td>119~126</td><td>324~394（0.71% / 1.43%）</td><td>243~295（0.96% / 1.92%）</td><td>123~149（1.92% / 3.85%）</td><td>25~29（12.5% / 25%）</td></tr>
+<tr><td>127以上</td><td>395~481（0.58% / 1.16%）</td><td>296~360（0.78% / 1.56%）</td><td>150~182（1.56% / 3.13%）</td><td>30~35（10% / 20%）</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>誓いの指輪</caption>
+<thead><tr><th>アイテムレベル</th><th>ダメージ増加 +N%</th><th>追加火炎ダメージ +N</th><th>全ステータス +N</th><th>全耐性 +N</th></tr></thead><tbody>
+<tr><td>1~11</td><td>5~10（10% / 20%）</td><td>2~5（16.67% / 33.33%）</td><td>1~2（50% / –）</td><td>3~5（25% / 50%）</td></tr>
+<tr><td>12~24</td><td>11~20（5.56% / 11.11%）</td><td>6~14（6.25% / 12.5%）</td><td>3~4（50% / –）</td><td>6~9（16.67% / 33.33%）</td></tr>
+<tr><td>25~39</td><td>21~35（3.57% / 7.14%）</td><td>15~30（3.33% / 6.67%）</td><td>5~7（25% / 50%）</td><td>10~13（16.67% / 33.33%）</td></tr>
+<tr><td>40~54</td><td>36~55（2.63% / 5.26%）</td><td>31~55（2.08% / 4.17%）</td><td>8~11（16.67% / 33.33%）</td><td>17~23（8.33% / 16.67%）</td></tr>
+<tr><td>55~62</td><td>56~80（2.08% / 4.17%）</td><td>56~90（1.47% / 2.94%）</td><td>12~16（12.5% / 25%）</td><td>24~32（6.25% / 12.5%）</td></tr>
+<tr><td>63~70</td><td>81~98（2.94% / 5.88%）</td><td>91~110（2.63% / 5.26%）</td><td>17~20（16.67% / 33.33%）</td><td>33~39（8.33% / 16.67%）</td></tr>
+<tr><td>71~78</td><td>99~120（2.38% / 4.76%）</td><td>111~134（2.17% / 4.35%）</td><td>21~24（16.67% / 33.33%）</td><td>40~48（6.25% / 12.5%）</td></tr>
+<tr><td>79~86</td><td>121~146（2% / 4%）</td><td>135~163（1.79% / 3.57%）</td><td>25~29（12.5% / 25%）</td><td>49~59（5% / 10%）</td></tr>
+<tr><td>87~94</td><td>147~178（1.61% / 3.23%）</td><td>164~199（1.43% / 2.86%）</td><td>30~35（10% / 20%）</td><td>60~72（4.17% / 8.33%）</td></tr>
+<tr><td>95~102</td><td>179~217（1.32% / 2.63%）</td><td>200~243（1.16% / 2.33%）</td><td>36~43（7.14% / 14.29%）</td><td>73~88（3.33% / 6.67%）</td></tr>
+<tr><td>103~110</td><td>218~265（1.06% / 2.13%）</td><td>244~296（0.96% / 1.92%）</td><td>44~52（6.25% / 12.5%）</td><td>89~107（2.78% / 5.56%）</td></tr>
+<tr><td>111~118</td><td>266~323（0.88% / 1.75%）</td><td>297~361（0.78% / 1.56%）</td><td>53~63（5% / 10%）</td><td>108~131（2.17% / 4.35%）</td></tr>
+<tr><td>119~126</td><td>324~394（0.71% / 1.43%）</td><td>362~440（0.64% / 1.28%）</td><td>64~77（3.85% / 7.69%）</td><td>132~160（1.79% / 3.57%）</td></tr>
+<tr><td>127以上</td><td>395~481（0.58% / 1.16%）</td><td>441~537（0.52% / 1.04%）</td><td>78~94（3.13% / 6.25%）</td><td>161~195（1.47% / 2.94%）</td></tr>
+</tbody></table></div>
+<h2 id="enhanceBonus">強化ボーナスオプション</h2>
+<p>装備が+10 · +15に到達するたびに、ボーナスオプションが1行ずつ付きます（伝説装備を除く）。どのオプションが付くかは装備ごとに最初から決まっていて引き直せず、強化に失敗しても消えません。継承で段階を移すと、受け取る装備に決まっているオプションが付きます。</p>
+<p>オプションは下の表の候補から同じ確率で決まります。その装備にすでに付いているオプションは候補から外れ（残りの候補で同じ確率）、+15のオプションは+10で付いたオプションを除いた候補から決まります。表の確率は外れる候補がない場合の値です。</p>
+<p>数値に確率はありません。その装備のアイテムレベルで同じオプションが通常付くときの平均値に、下の割合を掛けた値です。</p>
+<div class="tw"><table>
+<caption>騎士</caption>
+<thead><tr><th>部位</th><th>候補オプションと確率</th></tr></thead><tbody>
+<tr><td>武器 · 兜 · 手袋 · ブーツ</td><td>最大HP +N 33.33% · 体力 +N 33.33% · 筋力 +N 33.33%</td></tr>
+<tr><td>鎧</td><td>全ステータス +N 25% · 最大HP +N 25% · 体力 +N 25% · 筋力 +N 25%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>魔術師</caption>
+<thead><tr><th>部位</th><th>候補オプションと確率</th></tr></thead><tbody>
+<tr><td>武器 · 兜 · 手袋 · ブーツ</td><td>最大HP +N 33.33% · 体力 +N 33.33% · 精神 +N 33.33%</td></tr>
+<tr><td>鎧</td><td>全ステータス +N 25% · 最大HP +N 25% · 体力 +N 25% · 精神 +N 25%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>狩人</caption>
+<thead><tr><th>部位</th><th>候補オプションと確率</th></tr></thead><tbody>
+<tr><td>武器 · 兜 · 手袋 · ブーツ</td><td>最大HP +N 33.33% · 体力 +N 33.33% · 敏捷 +N 33.33%</td></tr>
+<tr><td>鎧</td><td>全ステータス +N 25% · 最大HP +N 25% · 体力 +N 25% · 敏捷 +N 25%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>ボーナスオプションの数値</caption>
+<thead><tr><th>オプション</th><th>通常オプションの平均に対する割合</th></tr></thead><tbody>
+<tr><td>最大HP +N</td><td>46.7%</td></tr>
+<tr><td>体力 +N</td><td>59.5%</td></tr>
+<tr><td>筋力 +N</td><td>46.5%</td></tr>
+<tr><td>全ステータス +N</td><td>61%</td></tr>
+<tr><td>精神 +N</td><td>49.5%</td></tr>
+<tr><td>敏捷 +N</td><td>39.1%</td></tr>
+</tbody></table></div>
+<h2 id="summon">7体目の召喚獣の贈り物</h2>
+<p>Lv77で7番目の召喚獣枠が解放されると、下の召喚獣から1体を贈り物として受け取ります。結果はキャラクターごとに決まっており、引き直すことはできません。すでに入手した召喚獣は候補から外れます（残りの候補は同じ確率）。すべて所持している場合は、代わりに強化石を100個受け取ります。</p>
+<p>ほかの召喚獣は、強化石100個の固定価格で選んで入手します。ランダムな購入はありません。</p>
+<p>召喚獣の強化は失敗しません。1段階ごとにライフ・ダメージ+4%、最大+10、+10までに必要な強化石は484個です。</p>
+<div class="tw"><table>
+<thead><tr><th>召喚獣</th><th>確率</th></tr></thead><tbody>
+<tr><td>墓場の巨人</td><td>50%</td></tr>
+<tr><td>鎖の処刑人</td><td>50%</td></tr>
+</tbody></table></div>
+</main>
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>악마 소환 히어로 키우기 — 확률 정보</title>
+<style>:root{--bg:#f7f5f1;--fg:#1d1a17;--dim:#5d564e;--line:#d9d2c7;--head:#8a5a14;--notice:#9a2f1c}
+@media (prefers-color-scheme:dark){:root{--bg:#141217;--fg:#ece6dc;--dim:#a99f93;--line:#3a343c;--head:#e8b45a;--notice:#ff9a7a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,-apple-system,"Noto Sans KR","Noto Sans JP","Noto Sans TC","Noto Sans SC",sans-serif}
+main{max-width:960px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:8px 0 4px}h2{font-size:21px;margin:40px 0 8px;color:var(--head);border-bottom:1px solid var(--line);padding-bottom:6px}
+p{margin:8px 0;color:var(--dim)}.notice{color:var(--notice);font-weight:700}nav{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;margin-bottom:8px}nav a{color:var(--dim)}nav a[aria-current]{color:var(--fg);font-weight:700}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:10px 0;font-size:14px}th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--head)}caption{text-align:left;font-weight:700;padding:4px 0}</style>
+</head>
+<body>
+<main>
+<nav aria-label="language"><a href="ko.html" aria-current="page">한국어</a><a href="en.html">English</a><a href="zh-TW.html">繁體中文</a><a href="ja.html">日本語</a><a href="de.html">Deutsch</a><a href="zh-CN.html">简体中文</a><a href="es.html">Español</a><a href="it.html">Italiano</a><a href="pl.html">Polski</a></nav>
+<p class="notice">확률형 아이템 포함</p>
+<h1>악마 소환 히어로 키우기 · 확률 정보</h1>
+<p>골드·마정석·성수는 상점 상품으로도 얻을 수 있으므로, 이 재화로 얻는 무작위 결과의 확률을 모두 공개합니다.</p>
+<p>아래 수치는 게임에 들어 있는 데이터에서 직접 계산해 표시합니다(버전 1.1.0). 기간 한정 없이 상시 적용됩니다.</p>
+<h2 id="rarity">아이템 등급 확률</h2>
+<p>'전리품 자루 하나 더'로 받는 자루도 같은 확률입니다.</p>
+<p>유니크나 세트가 뽑혔는데 그 부위·아이템 레벨에 후보가 없으면 희귀로 바뀝니다.</p>
+<div class="tw"><table>
+<thead><tr><th>경로</th><th>일반</th><th>마법</th><th>희귀</th><th>세트</th><th>유니크</th></tr></thead><tbody>
+<tr><td>오프라인 전리품 자루</td><td>62.01%</td><td>28.01%</td><td>9.98%</td><td>0%</td><td>0%</td></tr>
+<tr><td>전리품 자루 (귀한 자루 보유)</td><td>62.01%</td><td>28%</td><td>9.98%</td><td>0.0055%</td><td>0.0055%</td></tr>
+<tr><td>암시장</td><td>0%</td><td>78%</td><td>20%</td><td>0.5%</td><td>1.5%</td></tr>
+</tbody></table></div>
+<h2 id="gamble">암시장</h2>
+<p>진열대가 채워질 때(매일 0시·8시·16시 갱신, 또는 마정석 즉시 새로고침) 칸마다 등급이 정해지고, 칸은 '?'로 가려져 있다가 구매하면 공개됩니다. 등급 확률은 채워지는 순간의 천장 누적과 암시장 단골 랭크를 따릅니다.</p>
+<p>천장: 세트·유니크가 아닌 칸을 살 때마다 1씩 쌓이고, 세트나 유니크를 사면 0이 됩니다. 누적이 30회 늘 때마다 세트·유니크 가중치가 ×2씩 곱해집니다(상한 없음).</p>
+<p>아이템 레벨: 현재 스테이지 -3~+3 사이 정수 중 균등</p>
+<p>부위: 진열대 칸마다 정해져 있습니다(무기 2칸 · 방어구 4칸 · 장신구 2칸)</p>
+<p>기본 아이템: 그 부위에서 내 직업이 쓸 수 있는 기본 아이템 중 균등</p>
+<p>유니크: 그 부위·아이템 레벨에서 나올 수 있는 유니크 중 균등</p>
+<p>세트: 그 부위·아이템 레벨에서 나올 수 있는 세트 부위 중 균등</p>
+<p>마정석으로 즉시 새로고침한 진열대도 같은 확률입니다.</p>
+<div class="tw"><table>
+<thead><tr><th>암시장 단골 랭크</th><th>일반</th><th>마법</th><th>희귀</th><th>세트</th><th>유니크</th></tr></thead><tbody>
+<tr><td>0</td><td>0%</td><td>78%</td><td>20%</td><td>0.5%</td><td>1.5%</td></tr>
+<tr><td>1</td><td>0%</td><td>77.23%</td><td>19.8%</td><td>0.99%</td><td>1.98%</td></tr>
+<tr><td>2</td><td>0%</td><td>76.47%</td><td>19.61%</td><td>1.47%</td><td>2.45%</td></tr>
+<tr><td>3</td><td>0%</td><td>75.73%</td><td>19.42%</td><td>1.94%</td><td>2.91%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<thead><tr><th>진열대가 채워질 때의 천장 누적</th><th>일반</th><th>마법</th><th>희귀</th><th>세트</th><th>유니크</th></tr></thead><tbody>
+<tr><td>0~29회</td><td>0%</td><td>78%</td><td>20%</td><td>0.5%</td><td>1.5%</td></tr>
+<tr><td>30~59회</td><td>0%</td><td>76.47%</td><td>19.61%</td><td>0.98%</td><td>2.94%</td></tr>
+<tr><td>60~89회</td><td>0%</td><td>73.58%</td><td>18.87%</td><td>1.89%</td><td>5.66%</td></tr>
+<tr><td>90~119회</td><td>0%</td><td>68.42%</td><td>17.54%</td><td>3.51%</td><td>10.53%</td></tr>
+<tr><td>120~149회</td><td>0%</td><td>60%</td><td>15.38%</td><td>6.15%</td><td>18.46%</td></tr>
+</tbody></table></div>
+<h2 id="sack">전리품 자루</h2>
+<p>자루 하나에 아이템 3개(전리품 자루 랭크당 +1)</p>
+<p>아이템 레벨: 안전 스테이지 -2~+3 사이 정수 중 균등</p>
+<p>부위: 8개 부위 중 균등 · 기본 아이템: 그 부위의 기본 아이템 중 균등</p>
+<p>보석: 자루마다 2% 확률로 1개 · 5종 중 균등 · 등급은 현재 난이도의 기본 등급</p>
+<p>유니크 선택 가중치: 기본 1, 같은 유니크를 3번 이상 얻었으면 ×0.5, 그 유니크 표식이 10개 이상이면 ×2</p>
+<h2 id="affix">접사</h2>
+<p>고르는 방법: 정해진 종류(접두·접미)에서 이 부위·아이템 레벨에 열려 있고, 기본 아이템 조건을 만족하며, 이미 붙은 접사와 겹치지 않는 후보 중 균등합니다. 같은 그룹(원소 피해 증가·저항)은 2개까지 붙습니다.</p>
+<p>수치: 티어 범위의 최솟값~최댓값 사이에서 균등</p>
+<p>스킬 +1 기본 아이템(마법봉): 접두를 고를 때 먼저 20% 확률로 '스킬 통달'</p>
+<p>'스킬 통달' 접사는 T3부터 있어 창 안의 더 낮은 티어 몫이 빠집니다.</p>
+<p>그 접사에 열린 티어 가운데 가장 높은 5개만 나오며, 낮은 쪽부터 40 : 30 : 18 : 9 : 3 비율입니다. 마법 아이템은 가장 높은 열린 티어 가중치가 ×2입니다.</p>
+<div class="tw"><table>
+<thead><tr><th>접사 개수</th><th></th></tr></thead><tbody>
+<tr><td>마법</td><td>접두만 37.5% · 접미만 37.5% · 둘 다 25%</td></tr>
+<tr><td>희귀</td><td>3~5개 중 균등(각 33.33%) · 하나 붙일 때마다 접두·접미 50%(종류별 최대 3개)</td></tr>
+<tr><td>세트</td><td>고정 접사 + 무작위 접미 1개</td></tr>
+<tr><td>유니크</td><td>고정 접사만(무작위 없음)</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>부위별 첫 번째 접사 후보 수(접두 / 접미) — 선택 확률은 1 ÷ 후보 수</caption>
+<thead><tr><th></th><th>ilvl 1</th><th>ilvl 25</th><th>ilvl 55</th><th>ilvl 87</th><th>ilvl 119</th><th>ilvl 150</th></tr></thead><tbody>
+<tr><td>무기</td><td>16~17 / 8</td><td>17~18 / 8</td><td>17~18 / 8</td><td>17~18 / 8</td><td>17~18 / 8</td><td>17~18 / 8</td></tr>
+<tr><td>보조</td><td>10 / 10~14</td><td>10 / 10~14</td><td>10 / 10~14</td><td>10 / 10~14</td><td>10 / 10~14</td><td>10 / 10~14</td></tr>
+<tr><td>투구</td><td>4 / 17</td><td>5 / 17</td><td>5 / 17</td><td>5 / 17</td><td>5 / 17</td><td>5 / 17</td></tr>
+<tr><td>갑옷</td><td>3 / 15</td><td>3 / 15</td><td>3 / 15</td><td>3 / 15</td><td>3 / 15</td><td>3 / 15</td></tr>
+<tr><td>장갑</td><td>11 / 15</td><td>11 / 15</td><td>11 / 15</td><td>11 / 15</td><td>11 / 15</td><td>11 / 15</td></tr>
+<tr><td>장화</td><td>2 / 14</td><td>2 / 14</td><td>2 / 14</td><td>2 / 14</td><td>2 / 14</td><td>2 / 14</td></tr>
+<tr><td>반지</td><td>8 / 17</td><td>8 / 17</td><td>8 / 17</td><td>8 / 17</td><td>8 / 17</td><td>8 / 17</td></tr>
+<tr><td>목걸이</td><td>12 / 19</td><td>13 / 19</td><td>13 / 19</td><td>13 / 19</td><td>13 / 19</td><td>13 / 19</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<thead><tr><th>접사 티어 확률</th><th>최고</th><th>최고-1</th><th>최고-2</th><th>최고-3</th><th>최고-4</th></tr></thead><tbody>
+<tr><td>열린 티어 1개</td><td>100%</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>열린 티어 1개 (마법)</td><td>100%</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>열린 티어 2개</td><td>42.86%</td><td>57.14%</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>열린 티어 2개 (마법)</td><td>60%</td><td>40%</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>열린 티어 3개</td><td>20.45%</td><td>34.09%</td><td>45.45%</td><td>–</td><td>–</td></tr>
+<tr><td>열린 티어 3개 (마법)</td><td>33.96%</td><td>28.3%</td><td>37.74%</td><td>–</td><td>–</td></tr>
+<tr><td>열린 티어 4개</td><td>9.28%</td><td>18.56%</td><td>30.93%</td><td>41.24%</td><td>–</td></tr>
+<tr><td>열린 티어 4개 (마법)</td><td>16.98%</td><td>16.98%</td><td>28.3%</td><td>37.74%</td><td>–</td></tr>
+<tr><td>열린 티어 5개 이상</td><td>3%</td><td>9%</td><td>18%</td><td>30%</td><td>40%</td></tr>
+<tr><td>열린 티어 5개 이상 (마법)</td><td>5.83%</td><td>8.74%</td><td>17.48%</td><td>29.13%</td><td>38.83%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>무기 접사 후보</caption>
+<thead><tr><th>접사</th><th>종류</th><th>효과</th><th>처음 열리는 ilvl</th><th>조건</th></tr></thead><tbody>
+<tr><td>날카로운</td><td>접두</td><td>피해 증가 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>잔혹한</td><td>접두</td><td>물리 피해 +N 추가</td><td>1</td><td>–</td></tr>
+<tr><td>화염의</td><td>접두</td><td>화염 피해 +N 추가</td><td>1</td><td>–</td></tr>
+<tr><td>서리의</td><td>접두</td><td>냉기 피해 +N 추가</td><td>1</td><td>–</td></tr>
+<tr><td>뇌전의</td><td>접두</td><td>번개 피해 +1–N 추가</td><td>1</td><td>–</td></tr>
+<tr><td>독니의</td><td>접두</td><td>독 피해 +N 추가 (5초)</td><td>1</td><td>–</td></tr>
+<tr><td>화염 걸친</td><td>접두</td><td>화염 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>서리 걸친</td><td>접두</td><td>냉기 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>뇌전 걸친</td><td>접두</td><td>번개 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>독 걸친</td><td>접두</td><td>독 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>신속한</td><td>접두</td><td>공격 속도 +N%</td><td>1</td><td>장검·전투도끼·철퇴·나무 지팡이·마법봉·장궁·석궁·단검 전용</td></tr>
+<tr><td>유창한</td><td>접두</td><td>시전 속도 +N%</td><td>1</td><td>나무 지팡이·마법봉 전용</td></tr>
+<tr><td>치명적인</td><td>접두</td><td>치명타 확률 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>무자비한</td><td>접두</td><td>치명타 피해 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>꿰뚫는</td><td>접두</td><td>저항 관통 N (전 속성)</td><td>1</td><td>장검·전투도끼·철퇴·나무 지팡이·마법봉·장궁·석궁·단검 전용</td></tr>
+<tr><td>스킬 통달</td><td>접두</td><td>모든 스킬 레벨 +N</td><td>25</td><td>–</td></tr>
+<tr><td>가지 통달</td><td>접두</td><td>무작위 가지(A·B·C 각 33.33%) 스킬 레벨 +N</td><td>1</td><td>–</td></tr>
+<tr><td>넓은</td><td>접두</td><td>광역 반경 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>황소의</td><td>접미</td><td>최대 HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>힘의</td><td>접미</td><td>힘 +N</td><td>1</td><td>–</td></tr>
+<tr><td>민첩의</td><td>접미</td><td>민첩 +N</td><td>1</td><td>–</td></tr>
+<tr><td>활력의</td><td>접미</td><td>활력 +N</td><td>1</td><td>–</td></tr>
+<tr><td>정신의</td><td>접미</td><td>정신 +N</td><td>1</td><td>–</td></tr>
+<tr><td>거머리의</td><td>접미</td><td>물리 피해의 N% 흡혈</td><td>1</td><td>–</td></tr>
+<tr><td>지속의</td><td>접미</td><td>상태이상 지속 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>망나니의</td><td>접미</td><td>HP 30% 이하 대상 피해 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>보조 접사 후보</caption>
+<thead><tr><th>접사</th><th>종류</th><th>효과</th><th>처음 열리는 ilvl</th><th>조건</th></tr></thead><tbody>
+<tr><td>날카로운</td><td>접두</td><td>피해 증가 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>화염 걸친</td><td>접두</td><td>화염 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>서리 걸친</td><td>접두</td><td>냉기 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>뇌전 걸친</td><td>접두</td><td>번개 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>독 걸친</td><td>접두</td><td>독 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>신속한</td><td>접두</td><td>공격 속도 +N%</td><td>1</td><td>화살통 전용</td></tr>
+<tr><td>유창한</td><td>접두</td><td>시전 속도 +N%</td><td>1</td><td>오브 전용</td></tr>
+<tr><td>무자비한</td><td>접두</td><td>치명타 피해 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>꿰뚫는</td><td>접두</td><td>저항 관통 N (전 속성)</td><td>1</td><td>오브·화살통 전용</td></tr>
+<tr><td>가지 통달</td><td>접두</td><td>무작위 가지(A·B·C 각 33.33%) 스킬 레벨 +N</td><td>1</td><td>–</td></tr>
+<tr><td>튼튼한</td><td>접두</td><td>방어 증가 +N%</td><td>1</td><td>둥근 방패 전용</td></tr>
+<tr><td>가시 돋친</td><td>접두</td><td>근접 공격자에게 N 반사 피해</td><td>1</td><td>둥근 방패 전용</td></tr>
+<tr><td>넓은</td><td>접두</td><td>광역 반경 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>황소의</td><td>접미</td><td>최대 HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>힘의</td><td>접미</td><td>힘 +N</td><td>1</td><td>–</td></tr>
+<tr><td>민첩의</td><td>접미</td><td>민첩 +N</td><td>1</td><td>–</td></tr>
+<tr><td>활력의</td><td>접미</td><td>활력 +N</td><td>1</td><td>–</td></tr>
+<tr><td>정신의</td><td>접미</td><td>정신 +N</td><td>1</td><td>–</td></tr>
+<tr><td>불 수호의</td><td>접미</td><td>화염 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>서리 수호의</td><td>접미</td><td>냉기 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>뇌전 수호의</td><td>접미</td><td>번개 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>독 수호의</td><td>접미</td><td>독 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>축복받은</td><td>접미</td><td>모든 저항 +N</td><td>1</td><td>둥근 방패 전용</td></tr>
+<tr><td>샘의</td><td>접미</td><td>자원 재생 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>성벽의</td><td>접미</td><td>막기 확률 +N%</td><td>1</td><td>둥근 방패 전용</td></tr>
+<tr><td>철벽의</td><td>접미</td><td>막기 피해 감소 +N%</td><td>1</td><td>둥근 방패 전용</td></tr>
+<tr><td>꺾이지 않는</td><td>접미</td><td>받는 피해 −N%</td><td>1</td><td>둥근 방패 전용</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>투구 접사 후보</caption>
+<thead><tr><th>접사</th><th>종류</th><th>효과</th><th>처음 열리는 ilvl</th><th>조건</th></tr></thead><tbody>
+<tr><td>스킬 통달</td><td>접두</td><td>모든 스킬 레벨 +N</td><td>25</td><td>–</td></tr>
+<tr><td>가지 통달</td><td>접두</td><td>무작위 가지(A·B·C 각 33.33%) 스킬 레벨 +N</td><td>1</td><td>–</td></tr>
+<tr><td>튼튼한</td><td>접두</td><td>방어 증가 +N%</td><td>1</td><td>투구·후드·관 전용</td></tr>
+<tr><td>가시 돋친</td><td>접두</td><td>근접 공격자에게 N 반사 피해</td><td>1</td><td>투구·후드·관 전용</td></tr>
+<tr><td>견고한</td><td>접두</td><td>방어 +N</td><td>1</td><td>–</td></tr>
+<tr><td>황소의</td><td>접미</td><td>최대 HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>거인의</td><td>접미</td><td>최대 HP +N%</td><td>1</td><td>–</td></tr>
+<tr><td>힘의</td><td>접미</td><td>힘 +N</td><td>1</td><td>–</td></tr>
+<tr><td>민첩의</td><td>접미</td><td>민첩 +N</td><td>1</td><td>–</td></tr>
+<tr><td>활력의</td><td>접미</td><td>활력 +N</td><td>1</td><td>–</td></tr>
+<tr><td>정신의</td><td>접미</td><td>정신 +N</td><td>1</td><td>–</td></tr>
+<tr><td>불 수호의</td><td>접미</td><td>화염 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>서리 수호의</td><td>접미</td><td>냉기 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>뇌전 수호의</td><td>접미</td><td>번개 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>독 수호의</td><td>접미</td><td>독 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>재생의</td><td>접미</td><td>초당 HP N 재생</td><td>1</td><td>–</td></tr>
+<tr><td>샘의</td><td>접미</td><td>자원 재생 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>절약의</td><td>접미</td><td>스킬 자원 소모 −N%</td><td>1</td><td>–</td></tr>
+<tr><td>시간의</td><td>접미</td><td>쿨다운 감소 N%</td><td>1</td><td>–</td></tr>
+<tr><td>행운의</td><td>접미</td><td>마법 발견 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>꺾이지 않는</td><td>접미</td><td>받는 피해 −N%</td><td>1</td><td>투구·후드·관 전용</td></tr>
+<tr><td>배움의</td><td>접미</td><td>경험치 획득 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>갑옷 접사 후보</caption>
+<thead><tr><th>접사</th><th>종류</th><th>효과</th><th>처음 열리는 ilvl</th><th>조건</th></tr></thead><tbody>
+<tr><td>튼튼한</td><td>접두</td><td>방어 증가 +N%</td><td>1</td><td>판금 갑옷·사슬 갑옷·가죽 갑옷·로브 전용</td></tr>
+<tr><td>가시 돋친</td><td>접두</td><td>근접 공격자에게 N 반사 피해</td><td>1</td><td>판금 갑옷·사슬 갑옷·가죽 갑옷·로브 전용</td></tr>
+<tr><td>견고한</td><td>접두</td><td>방어 +N</td><td>1</td><td>–</td></tr>
+<tr><td>황소의</td><td>접미</td><td>최대 HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>거인의</td><td>접미</td><td>최대 HP +N%</td><td>1</td><td>–</td></tr>
+<tr><td>힘의</td><td>접미</td><td>힘 +N</td><td>1</td><td>–</td></tr>
+<tr><td>민첩의</td><td>접미</td><td>민첩 +N</td><td>1</td><td>–</td></tr>
+<tr><td>활력의</td><td>접미</td><td>활력 +N</td><td>1</td><td>–</td></tr>
+<tr><td>정신의</td><td>접미</td><td>정신 +N</td><td>1</td><td>–</td></tr>
+<tr><td>만능의</td><td>접미</td><td>모든 능력치 +N</td><td>1</td><td>–</td></tr>
+<tr><td>불 수호의</td><td>접미</td><td>화염 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>서리 수호의</td><td>접미</td><td>냉기 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>뇌전 수호의</td><td>접미</td><td>번개 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>독 수호의</td><td>접미</td><td>독 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>축복받은</td><td>접미</td><td>모든 저항 +N</td><td>1</td><td>판금 갑옷·사슬 갑옷·가죽 갑옷·로브 전용</td></tr>
+<tr><td>재생의</td><td>접미</td><td>초당 HP N 재생</td><td>1</td><td>–</td></tr>
+<tr><td>날쌘</td><td>접미</td><td>회피 등급 +N</td><td>1</td><td>–</td></tr>
+<tr><td>꺾이지 않는</td><td>접미</td><td>받는 피해 −N%</td><td>1</td><td>판금 갑옷·사슬 갑옷·가죽 갑옷·로브 전용</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>장갑 접사 후보</caption>
+<thead><tr><th>접사</th><th>종류</th><th>효과</th><th>처음 열리는 ilvl</th><th>조건</th></tr></thead><tbody>
+<tr><td>날카로운</td><td>접두</td><td>피해 증가 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>잔혹한</td><td>접두</td><td>물리 피해 +N 추가</td><td>1</td><td>–</td></tr>
+<tr><td>화염 걸친</td><td>접두</td><td>화염 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>서리 걸친</td><td>접두</td><td>냉기 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>뇌전 걸친</td><td>접두</td><td>번개 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>독 걸친</td><td>접두</td><td>독 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>신속한</td><td>접두</td><td>공격 속도 +N%</td><td>1</td><td>건틀릿·가죽 장갑·비단 장갑 전용</td></tr>
+<tr><td>유창한</td><td>접두</td><td>시전 속도 +N%</td><td>1</td><td>건틀릿·가죽 장갑·비단 장갑 전용</td></tr>
+<tr><td>치명적인</td><td>접두</td><td>치명타 확률 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>튼튼한</td><td>접두</td><td>방어 증가 +N%</td><td>1</td><td>건틀릿·가죽 장갑·비단 장갑 전용</td></tr>
+<tr><td>견고한</td><td>접두</td><td>방어 +N</td><td>1</td><td>–</td></tr>
+<tr><td>황소의</td><td>접미</td><td>최대 HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>힘의</td><td>접미</td><td>힘 +N</td><td>1</td><td>–</td></tr>
+<tr><td>민첩의</td><td>접미</td><td>민첩 +N</td><td>1</td><td>–</td></tr>
+<tr><td>활력의</td><td>접미</td><td>활력 +N</td><td>1</td><td>–</td></tr>
+<tr><td>정신의</td><td>접미</td><td>정신 +N</td><td>1</td><td>–</td></tr>
+<tr><td>불 수호의</td><td>접미</td><td>화염 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>서리 수호의</td><td>접미</td><td>냉기 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>뇌전 수호의</td><td>접미</td><td>번개 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>독 수호의</td><td>접미</td><td>독 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>재생의</td><td>접미</td><td>초당 HP N 재생</td><td>1</td><td>–</td></tr>
+<tr><td>시간의</td><td>접미</td><td>쿨다운 감소 N%</td><td>1</td><td>–</td></tr>
+<tr><td>날쌘</td><td>접미</td><td>회피 등급 +N</td><td>1</td><td>–</td></tr>
+<tr><td>행운의</td><td>접미</td><td>마법 발견 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>탐욕의</td><td>접미</td><td>골드 발견 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>지속의</td><td>접미</td><td>상태이상 지속 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>장화 접사 후보</caption>
+<thead><tr><th>접사</th><th>종류</th><th>효과</th><th>처음 열리는 ilvl</th><th>조건</th></tr></thead><tbody>
+<tr><td>튼튼한</td><td>접두</td><td>방어 증가 +N%</td><td>1</td><td>각반·장화·비단 신발 전용</td></tr>
+<tr><td>견고한</td><td>접두</td><td>방어 +N</td><td>1</td><td>–</td></tr>
+<tr><td>황소의</td><td>접미</td><td>최대 HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>힘의</td><td>접미</td><td>힘 +N</td><td>1</td><td>–</td></tr>
+<tr><td>민첩의</td><td>접미</td><td>민첩 +N</td><td>1</td><td>–</td></tr>
+<tr><td>활력의</td><td>접미</td><td>활력 +N</td><td>1</td><td>–</td></tr>
+<tr><td>정신의</td><td>접미</td><td>정신 +N</td><td>1</td><td>–</td></tr>
+<tr><td>불 수호의</td><td>접미</td><td>화염 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>서리 수호의</td><td>접미</td><td>냉기 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>뇌전 수호의</td><td>접미</td><td>번개 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>독 수호의</td><td>접미</td><td>독 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>재생의</td><td>접미</td><td>초당 HP N 재생</td><td>1</td><td>–</td></tr>
+<tr><td>바람의</td><td>접미</td><td>이동 속도 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>날쌘</td><td>접미</td><td>회피 등급 +N</td><td>1</td><td>–</td></tr>
+<tr><td>행운의</td><td>접미</td><td>마법 발견 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>탐욕의</td><td>접미</td><td>골드 발견 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>반지 접사 후보</caption>
+<thead><tr><th>접사</th><th>종류</th><th>효과</th><th>처음 열리는 ilvl</th><th>조건</th></tr></thead><tbody>
+<tr><td>날카로운</td><td>접두</td><td>피해 증가 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>잔혹한</td><td>접두</td><td>물리 피해 +N 추가</td><td>1</td><td>–</td></tr>
+<tr><td>화염의</td><td>접두</td><td>화염 피해 +N 추가</td><td>1</td><td>–</td></tr>
+<tr><td>서리의</td><td>접두</td><td>냉기 피해 +N 추가</td><td>1</td><td>–</td></tr>
+<tr><td>뇌전의</td><td>접두</td><td>번개 피해 +1–N 추가</td><td>1</td><td>–</td></tr>
+<tr><td>독니의</td><td>접두</td><td>독 피해 +N 추가 (5초)</td><td>1</td><td>–</td></tr>
+<tr><td>치명적인</td><td>접두</td><td>치명타 확률 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>무자비한</td><td>접두</td><td>치명타 피해 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>황소의</td><td>접미</td><td>최대 HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>힘의</td><td>접미</td><td>힘 +N</td><td>1</td><td>–</td></tr>
+<tr><td>민첩의</td><td>접미</td><td>민첩 +N</td><td>1</td><td>–</td></tr>
+<tr><td>활력의</td><td>접미</td><td>활력 +N</td><td>1</td><td>–</td></tr>
+<tr><td>정신의</td><td>접미</td><td>정신 +N</td><td>1</td><td>–</td></tr>
+<tr><td>만능의</td><td>접미</td><td>모든 능력치 +N</td><td>1</td><td>–</td></tr>
+<tr><td>불 수호의</td><td>접미</td><td>화염 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>서리 수호의</td><td>접미</td><td>냉기 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>뇌전 수호의</td><td>접미</td><td>번개 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>독 수호의</td><td>접미</td><td>독 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>축복받은</td><td>접미</td><td>모든 저항 +N</td><td>1</td><td>반지 전용</td></tr>
+<tr><td>거머리의</td><td>접미</td><td>물리 피해의 N% 흡혈</td><td>1</td><td>–</td></tr>
+<tr><td>재생의</td><td>접미</td><td>초당 HP N 재생</td><td>1</td><td>–</td></tr>
+<tr><td>샘의</td><td>접미</td><td>자원 재생 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>행운의</td><td>접미</td><td>마법 발견 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>탐욕의</td><td>접미</td><td>골드 발견 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>망나니의</td><td>접미</td><td>HP 30% 이하 대상 피해 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>목걸이 접사 후보</caption>
+<thead><tr><th>접사</th><th>종류</th><th>효과</th><th>처음 열리는 ilvl</th><th>조건</th></tr></thead><tbody>
+<tr><td>날카로운</td><td>접두</td><td>피해 증가 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>화염의</td><td>접두</td><td>화염 피해 +N 추가</td><td>1</td><td>–</td></tr>
+<tr><td>서리의</td><td>접두</td><td>냉기 피해 +N 추가</td><td>1</td><td>–</td></tr>
+<tr><td>뇌전의</td><td>접두</td><td>번개 피해 +1–N 추가</td><td>1</td><td>–</td></tr>
+<tr><td>화염 걸친</td><td>접두</td><td>화염 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>서리 걸친</td><td>접두</td><td>냉기 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>뇌전 걸친</td><td>접두</td><td>번개 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>독 걸친</td><td>접두</td><td>독 피해 +N%</td><td>1</td><td>그룹 원소 피해</td></tr>
+<tr><td>유창한</td><td>접두</td><td>시전 속도 +N%</td><td>1</td><td>목걸이 전용</td></tr>
+<tr><td>치명적인</td><td>접두</td><td>치명타 확률 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>무자비한</td><td>접두</td><td>치명타 피해 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>꿰뚫는</td><td>접두</td><td>저항 관통 N (전 속성)</td><td>1</td><td>목걸이 전용</td></tr>
+<tr><td>스킬 통달</td><td>접두</td><td>모든 스킬 레벨 +N</td><td>25</td><td>–</td></tr>
+<tr><td>황소의</td><td>접미</td><td>최대 HP +N</td><td>1</td><td>–</td></tr>
+<tr><td>거인의</td><td>접미</td><td>최대 HP +N%</td><td>1</td><td>–</td></tr>
+<tr><td>힘의</td><td>접미</td><td>힘 +N</td><td>1</td><td>–</td></tr>
+<tr><td>민첩의</td><td>접미</td><td>민첩 +N</td><td>1</td><td>–</td></tr>
+<tr><td>활력의</td><td>접미</td><td>활력 +N</td><td>1</td><td>–</td></tr>
+<tr><td>정신의</td><td>접미</td><td>정신 +N</td><td>1</td><td>–</td></tr>
+<tr><td>만능의</td><td>접미</td><td>모든 능력치 +N</td><td>1</td><td>–</td></tr>
+<tr><td>불 수호의</td><td>접미</td><td>화염 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>서리 수호의</td><td>접미</td><td>냉기 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>뇌전 수호의</td><td>접미</td><td>번개 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>독 수호의</td><td>접미</td><td>독 저항 +N</td><td>1</td><td>그룹 저항</td></tr>
+<tr><td>축복받은</td><td>접미</td><td>모든 저항 +N</td><td>1</td><td>목걸이 전용</td></tr>
+<tr><td>거머리의</td><td>접미</td><td>물리 피해의 N% 흡혈</td><td>1</td><td>–</td></tr>
+<tr><td>샘의</td><td>접미</td><td>자원 재생 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>절약의</td><td>접미</td><td>스킬 자원 소모 −N%</td><td>1</td><td>–</td></tr>
+<tr><td>시간의</td><td>접미</td><td>쿨다운 감소 N%</td><td>1</td><td>–</td></tr>
+<tr><td>행운의</td><td>접미</td><td>마법 발견 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>지속의</td><td>접미</td><td>상태이상 지속 +N%</td><td>1</td><td>–</td></tr>
+<tr><td>배움의</td><td>접미</td><td>경험치 획득 +N%</td><td>1</td><td>–</td></tr>
+</tbody></table></div>
+<h2 id="craft">재련 · 각인</h2>
+<p>전체 재굴림: 아이템 등급에 맞는 새 접사 목록(위 접사 규칙)</p>
+<p>수치 재굴림: 접사와 티어는 그대로, 수치만 티어 범위 안에서 균등</p>
+<p>잠금 재굴림: 잠근 접사는 그대로, 총 3~5개(균등)가 되도록 나머지를 위 규칙으로</p>
+<p>등급 상승(마법에서 희귀로): 접사 1~3개를 균등하게 추가(최대 5개까지)</p>
+<p>각인: 고른 접사가 그 아이템 레벨의 가장 높은 열린 티어로 붙고, 수치만 균등</p>
+<p>소켓 추가 · 티어 상승 · 보석 합성 · 보석 분리: 무작위 요소 없음</p>
+<p>처음 하는 전체 재굴림은 무료입니다. 재굴림하는 장비가 무기·보조·장갑·반지·목걸이 중 하나면 '날카로운' T1 최고 수치가 반드시 붙고, 나머지 접사는 위 접사 규칙을 따릅니다. 다른 부위는 보통 재굴림과 같습니다.</p>
+<h2 id="enhance">장비 강화</h2>
+<p>강화는 단계마다 무기 피해 ×(1 + 0.06 × 단계)(+15 = ×1.90), 방어구는 네 부위 단계의 합으로 생명력 ×(1 + 합 ÷ 120)(네 부위 모두 +15 = ×1.50), 최고 +15입니다. +6부터 실패하면 한 단계 내려가지만 +5 · +10은 바닥이라 그 아래로는 떨어지지 않고, 장비가 사라지는 일은 없습니다. 보호권을 쓰면 실패해도 단계를 지킵니다.</p>
+<p>전승은 확률이 없는 확정 작업입니다: 같은 부위에서 +0이고 아이템 레벨이 같거나 높은 장비로 단계를 옮기고, 원래 장비는 +0이 됩니다. 강화석 = 보호권을 쓰며 그 단계까지 드는 강화석의 25% × min(1, 오르는 아이템 레벨 ÷ 10), 반올림.</p>
+<p>보호권: 실패해서 단계가 내려갈 때만 1장이 쓰이고 단계를 지킵니다(대장간은 +7 이상에서 보호권을 겁니다). 성공 확률은 바뀌지 않고, 단계가 내려가지 않는 실패에는 쓰이지 않습니다.</p>
+<p>강화석은 보스 처치로 하루 1 / 2 / 4개(지상 / 계단 1~50층 / 계단 51층부터, 모든 캐릭터 합산)까지, 일일 목표 5개 보상으로 1개(같은 상한 안).</p>
+<div class="tw"><table>
+<thead><tr><th>단계</th><th>성공</th><th>실패 시</th><th>보호권</th><th>강화석</th></tr></thead><tbody>
+<tr><td>+0 › +1</td><td>100%</td><td>그대로</td><td>—</td><td>1</td></tr>
+<tr><td>+1 › +2</td><td>90%</td><td>그대로</td><td>—</td><td>1</td></tr>
+<tr><td>+2 › +3</td><td>80%</td><td>그대로</td><td>—</td><td>1</td></tr>
+<tr><td>+3 › +4</td><td>70%</td><td>그대로</td><td>—</td><td>1</td></tr>
+<tr><td>+4 › +5</td><td>60%</td><td>그대로</td><td>—</td><td>1</td></tr>
+<tr><td>+5 › +6</td><td>60%</td><td>그대로</td><td>—</td><td>2</td></tr>
+<tr><td>+6 › +7</td><td>55%</td><td>한 단계 내려감</td><td>단계 유지</td><td>2</td></tr>
+<tr><td>+7 › +8</td><td>50%</td><td>한 단계 내려감</td><td>단계 유지</td><td>2</td></tr>
+<tr><td>+8 › +9</td><td>45%</td><td>한 단계 내려감</td><td>단계 유지</td><td>2</td></tr>
+<tr><td>+9 › +10</td><td>40%</td><td>한 단계 내려감</td><td>단계 유지</td><td>2</td></tr>
+<tr><td>+10 › +11</td><td>40%</td><td>그대로</td><td>—</td><td>3</td></tr>
+<tr><td>+11 › +12</td><td>35%</td><td>한 단계 내려감</td><td>단계 유지</td><td>3</td></tr>
+<tr><td>+12 › +13</td><td>30%</td><td>한 단계 내려감</td><td>단계 유지</td><td>3</td></tr>
+<tr><td>+13 › +14</td><td>25%</td><td>한 단계 내려감</td><td>단계 유지</td><td>3</td></tr>
+<tr><td>+14 › +15</td><td>20%</td><td>한 단계 내려감</td><td>단계 유지</td><td>3</td></tr>
+</tbody></table></div>
+<h2 id="legend">전설 강화</h2>
+<p>전설 장비는 자기 강화표를 씁니다. 강화석은 같은 단계 일반 강화의 3배이고, 보호권은 +10까지 오르는 강화에만 쓸 수 있습니다. 바닥 +5 · +10 · +12에서 실패하면 그대로이므로 +12에 오르면 그 아래로 내려가지 않습니다. 최고 +15이며 장비가 사라지는 일은 없습니다.</p>
+<p>천장: 전설 장비를 +10 이상에서 강화하다 실패할 때마다 그 장비의 천장이 1씩 쌓입니다(최대 10). 천장이 10이면 다음 강화는 100% 성공하고 천장은 0이 됩니다. 표의 확률로 성공하면 천장은 그대로 남습니다.</p>
+<p>전승으로 전설 장비에 옮길 수 있는 단계는 +10까지입니다(확률 없는 확정 작업). 전설 장비의 단계는 다른 장비로 옮길 수 없습니다.</p>
+<div class="tw"><table>
+<thead><tr><th>단계</th><th>성공</th><th>실패 시</th><th>보호권</th><th>강화석</th></tr></thead><tbody>
+<tr><td>+0 › +1</td><td>100%</td><td>그대로</td><td>—</td><td>3</td></tr>
+<tr><td>+1 › +2</td><td>100%</td><td>그대로</td><td>—</td><td>3</td></tr>
+<tr><td>+2 › +3</td><td>100%</td><td>그대로</td><td>—</td><td>3</td></tr>
+<tr><td>+3 › +4</td><td>100%</td><td>그대로</td><td>—</td><td>3</td></tr>
+<tr><td>+4 › +5</td><td>100%</td><td>그대로</td><td>—</td><td>3</td></tr>
+<tr><td>+5 › +6</td><td>70%</td><td>그대로</td><td>—</td><td>6</td></tr>
+<tr><td>+6 › +7</td><td>62%</td><td>한 단계 내려감</td><td>단계 유지</td><td>6</td></tr>
+<tr><td>+7 › +8</td><td>55%</td><td>한 단계 내려감</td><td>단계 유지</td><td>6</td></tr>
+<tr><td>+8 › +9</td><td>47%</td><td>한 단계 내려감</td><td>단계 유지</td><td>6</td></tr>
+<tr><td>+9 › +10</td><td>40%</td><td>한 단계 내려감</td><td>단계 유지</td><td>6</td></tr>
+<tr><td>+10 › +11</td><td>30%</td><td>그대로</td><td>—</td><td>9</td></tr>
+<tr><td>+11 › +12</td><td>25%</td><td>한 단계 내려감</td><td>—</td><td>9</td></tr>
+<tr><td>+12 › +13</td><td>20%</td><td>그대로</td><td>—</td><td>9</td></tr>
+<tr><td>+13 › +14</td><td>15%</td><td>한 단계 내려감</td><td>—</td><td>9</td></tr>
+<tr><td>+14 › +15</td><td>10%</td><td>한 단계 내려감</td><td>—</td><td>9</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>천장 칸 수에 따른 다음 강화의 성공 확률</caption>
+<thead><tr><th>천장</th><th>다음 강화 성공 확률</th></tr></thead><tbody>
+<tr><td>0 ~ 9</td><td>표의 확률 (+10 › +11 30% · +11 › +12 25% · +12 › +13 20% · +13 › +14 15% · +14 › +15 10%)</td></tr>
+<tr><td>10</td><td>100%</td></tr>
+</tbody></table></div>
+<h2 id="legendReroll">전설 재련석</h2>
+<p>전설 재련석 1개로 가진 전설 장비 하나의 네 줄 수치를 다시 굴립니다. 줄의 종류는 전설마다 고정이라 바뀌지 않고, 새 값이 이전 값을 덮어씁니다. 되돌릴 수 없습니다.</p>
+<p>네 줄은 서로 따로 굴립니다. 각 줄의 값은 구간 최솟값 + (최댓값 − 최솟값) × r이고, r은 0~1 사이에서 고르게 뽑습니다(균등 분포). 구간은 그 전설 장비의 아이템 레벨이 여는 가장 높은 구간입니다.</p>
+<p>값은 정수로 반올림합니다. 그래서 구간의 양 끝값(최솟값 · 최댓값)은 그 사이 값의 절반 확률입니다. 최솟값과 최댓값의 차이가 k이면 양 끝값은 각각 1/(2k), 그 사이 값은 각각 1/k이고, 최솟값과 최댓값이 같으면 그 값이 100%입니다.</p>
+<p>전설 장비의 아이템 레벨은 착용자의 이번 생 최고 진행을 따라 오릅니다. 새 구간이 열리면 굴린 위치 r은 그대로 두고 값만 새 구간으로 옮깁니다.</p>
+<p>전설 장비를 처음 얻으면 무기 · 반지마다 재련석 1개를 무료로 받습니다. 재련은 무료 재련석부터 씁니다.</p>
+<p>표의 칸: 값의 범위 (양 끝값 각각의 확률 / 그 사이 값 각각의 확률).</p>
+<div class="tw"><table>
+<caption>왕의 대검 · 쇳덩이 대검 · 붉은 도끼 · 달 도끼 · 종 철퇴 · 운석 철퇴 · 별 지팡이 · 고목 지팡이 · 촛대 마법봉 · 거울 마법봉 · 날개 활 · 사슴뿔 활 · 성벽 석궁 · 톱니 석궁 · 독니 단검 · 유리 단검</caption>
+<thead><tr><th>아이템 레벨</th><th>피해 증가 +N%</th><th>화염 피해 +N%</th><th>공격 속도 +N%</th><th>물리 피해의 N% 흡혈</th></tr></thead><tbody>
+<tr><td>1~11</td><td>5~10 (10% / 20%)</td><td>8~12 (12.5% / 25%)</td><td>4~6 (25% / 50%)</td><td>1 (100%)</td></tr>
+<tr><td>12~24</td><td>11~20 (5.56% / 11.11%)</td><td>13~20 (7.14% / 14.29%)</td><td>7~10 (16.67% / 33.33%)</td><td>2 (100%)</td></tr>
+<tr><td>25~39</td><td>21~35 (3.57% / 7.14%)</td><td>21~30 (5.56% / 11.11%)</td><td>11~15 (12.5% / 25%)</td><td>3 (100%)</td></tr>
+<tr><td>40~54</td><td>36~55 (2.63% / 5.26%)</td><td>31~42 (4.55% / 9.09%)</td><td>16~22 (8.33% / 16.67%)</td><td>4 (100%)</td></tr>
+<tr><td>55~62</td><td>56~80 (2.08% / 4.17%)</td><td>43~60 (2.94% / 5.88%)</td><td>23~30 (7.14% / 14.29%)</td><td>5~6 (50% / –)</td></tr>
+<tr><td>63~70</td><td>81~98 (2.94% / 5.88%)</td><td>61~73 (4.17% / 8.33%)</td><td>31~37 (8.33% / 16.67%)</td><td>7 (100%)</td></tr>
+<tr><td>71~78</td><td>99~120 (2.38% / 4.76%)</td><td>74~89 (3.33% / 6.67%)</td><td>38~45 (7.14% / 14.29%)</td><td>8~9 (50% / –)</td></tr>
+<tr><td>79~86</td><td>121~146 (2% / 4%)</td><td>90~109 (2.63% / 5.26%)</td><td>46~55 (5.56% / 11.11%)</td><td>10~11 (50% / –)</td></tr>
+<tr><td>87~94</td><td>147~178 (1.61% / 3.23%)</td><td>110~133 (2.17% / 4.35%)</td><td>56~67 (4.55% / 9.09%)</td><td>12~13 (50% / –)</td></tr>
+<tr><td>95~102</td><td>179~217 (1.32% / 2.63%)</td><td>134~162 (1.79% / 3.57%)</td><td>68~82 (3.57% / 7.14%)</td><td>14~16 (25% / 50%)</td></tr>
+<tr><td>103~110</td><td>218~265 (1.06% / 2.13%)</td><td>163~198 (1.43% / 2.86%)</td><td>83~100 (2.94% / 5.88%)</td><td>17~20 (16.67% / 33.33%)</td></tr>
+<tr><td>111~118</td><td>266~323 (0.88% / 1.75%)</td><td>199~242 (1.16% / 2.33%)</td><td>101~122 (2.38% / 4.76%)</td><td>21~24 (16.67% / 33.33%)</td></tr>
+<tr><td>119~126</td><td>324~394 (0.71% / 1.43%)</td><td>243~295 (0.96% / 1.92%)</td><td>123~149 (1.92% / 3.85%)</td><td>25~29 (12.5% / 25%)</td></tr>
+<tr><td>127 이상</td><td>395~481 (0.58% / 1.16%)</td><td>296~360 (0.78% / 1.56%)</td><td>150~182 (1.56% / 3.13%)</td><td>30~35 (10% / 20%)</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>맹세 반지</caption>
+<thead><tr><th>아이템 레벨</th><th>피해 증가 +N%</th><th>화염 피해 +N 추가</th><th>모든 능력치 +N</th><th>모든 저항 +N</th></tr></thead><tbody>
+<tr><td>1~11</td><td>5~10 (10% / 20%)</td><td>2~5 (16.67% / 33.33%)</td><td>1~2 (50% / –)</td><td>3~5 (25% / 50%)</td></tr>
+<tr><td>12~24</td><td>11~20 (5.56% / 11.11%)</td><td>6~14 (6.25% / 12.5%)</td><td>3~4 (50% / –)</td><td>6~9 (16.67% / 33.33%)</td></tr>
+<tr><td>25~39</td><td>21~35 (3.57% / 7.14%)</td><td>15~30 (3.33% / 6.67%)</td><td>5~7 (25% / 50%)</td><td>10~13 (16.67% / 33.33%)</td></tr>
+<tr><td>40~54</td><td>36~55 (2.63% / 5.26%)</td><td>31~55 (2.08% / 4.17%)</td><td>8~11 (16.67% / 33.33%)</td><td>17~23 (8.33% / 16.67%)</td></tr>
+<tr><td>55~62</td><td>56~80 (2.08% / 4.17%)</td><td>56~90 (1.47% / 2.94%)</td><td>12~16 (12.5% / 25%)</td><td>24~32 (6.25% / 12.5%)</td></tr>
+<tr><td>63~70</td><td>81~98 (2.94% / 5.88%)</td><td>91~110 (2.63% / 5.26%)</td><td>17~20 (16.67% / 33.33%)</td><td>33~39 (8.33% / 16.67%)</td></tr>
+<tr><td>71~78</td><td>99~120 (2.38% / 4.76%)</td><td>111~134 (2.17% / 4.35%)</td><td>21~24 (16.67% / 33.33%)</td><td>40~48 (6.25% / 12.5%)</td></tr>
+<tr><td>79~86</td><td>121~146 (2% / 4%)</td><td>135~163 (1.79% / 3.57%)</td><td>25~29 (12.5% / 25%)</td><td>49~59 (5% / 10%)</td></tr>
+<tr><td>87~94</td><td>147~178 (1.61% / 3.23%)</td><td>164~199 (1.43% / 2.86%)</td><td>30~35 (10% / 20%)</td><td>60~72 (4.17% / 8.33%)</td></tr>
+<tr><td>95~102</td><td>179~217 (1.32% / 2.63%)</td><td>200~243 (1.16% / 2.33%)</td><td>36~43 (7.14% / 14.29%)</td><td>73~88 (3.33% / 6.67%)</td></tr>
+<tr><td>103~110</td><td>218~265 (1.06% / 2.13%)</td><td>244~296 (0.96% / 1.92%)</td><td>44~52 (6.25% / 12.5%)</td><td>89~107 (2.78% / 5.56%)</td></tr>
+<tr><td>111~118</td><td>266~323 (0.88% / 1.75%)</td><td>297~361 (0.78% / 1.56%)</td><td>53~63 (5% / 10%)</td><td>108~131 (2.17% / 4.35%)</td></tr>
+<tr><td>119~126</td><td>324~394 (0.71% / 1.43%)</td><td>362~440 (0.64% / 1.28%)</td><td>64~77 (3.85% / 7.69%)</td><td>132~160 (1.79% / 3.57%)</td></tr>
+<tr><td>127 이상</td><td>395~481 (0.58% / 1.16%)</td><td>441~537 (0.52% / 1.04%)</td><td>78~94 (3.13% / 6.25%)</td><td>161~195 (1.47% / 2.94%)</td></tr>
+</tbody></table></div>
+<h2 id="enhanceBonus">강화 보너스 옵션</h2>
+<p>장비가 +10 · +15에 오를 때마다 보너스 옵션이 1줄씩 붙습니다(전설 장비 제외). 어떤 옵션이 붙을지는 장비마다 처음부터 정해져 있어 다시 뽑을 수 없고, 강화에 실패해도 사라지지 않습니다. 전승으로 단계를 옮기면 받는 장비에 정해진 옵션이 붙습니다.</p>
+<p>옵션은 아래 표의 후보 중에서 같은 확률로 정해집니다. 그 장비에 이미 붙어 있는 옵션은 후보에서 빠지고(남은 후보끼리 같은 확률), +15의 옵션은 +10에서 붙은 옵션을 뺀 후보에서 정해집니다. 표의 확률은 빠지는 후보가 없을 때의 값입니다.</p>
+<p>수치에는 확률이 없습니다. 그 장비의 아이템 레벨에서 같은 옵션이 일반 옵션으로 붙을 때의 평균값에 아래 비율을 곱한 값입니다.</p>
+<div class="tw"><table>
+<caption>기사</caption>
+<thead><tr><th>부위</th><th>후보 옵션과 확률</th></tr></thead><tbody>
+<tr><td>무기 · 투구 · 장갑 · 장화</td><td>최대 HP +N 33.33% · 활력 +N 33.33% · 힘 +N 33.33%</td></tr>
+<tr><td>갑옷</td><td>모든 능력치 +N 25% · 최대 HP +N 25% · 활력 +N 25% · 힘 +N 25%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>마법사</caption>
+<thead><tr><th>부위</th><th>후보 옵션과 확률</th></tr></thead><tbody>
+<tr><td>무기 · 투구 · 장갑 · 장화</td><td>최대 HP +N 33.33% · 활력 +N 33.33% · 정신 +N 33.33%</td></tr>
+<tr><td>갑옷</td><td>모든 능력치 +N 25% · 최대 HP +N 25% · 활력 +N 25% · 정신 +N 25%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>사냥꾼</caption>
+<thead><tr><th>부위</th><th>후보 옵션과 확률</th></tr></thead><tbody>
+<tr><td>무기 · 투구 · 장갑 · 장화</td><td>최대 HP +N 33.33% · 활력 +N 33.33% · 민첩 +N 33.33%</td></tr>
+<tr><td>갑옷</td><td>모든 능력치 +N 25% · 최대 HP +N 25% · 활력 +N 25% · 민첩 +N 25%</td></tr>
+</tbody></table></div>
+<div class="tw"><table>
+<caption>보너스 옵션의 수치</caption>
+<thead><tr><th>옵션</th><th>일반 옵션 평균 대비</th></tr></thead><tbody>
+<tr><td>최대 HP +N</td><td>46.7%</td></tr>
+<tr><td>활력 +N</td><td>59.5%</td></tr>
+<tr><td>힘 +N</td><td>46.5%</td></tr>
+<tr><td>모든 능력치 +N</td><td>61%</td></tr>
+<tr><td>정신 +N</td><td>49.5%</td></tr>
+<tr><td>민첩 +N</td><td>39.1%</td></tr>
+</tbody></table></div>
+<h2 id="summon">7번째 소환수 선물</h2>
+<p>Lv77에 7번째 소환수 칸이 열리면 아래 소환수 중 하나를 선물로 받습니다. 캐릭터마다 결과가 정해져 있어 다시 뽑을 수 없고, 이미 데려온 소환수는 후보에서 빠집니다(남은 후보끼리 같은 확률). 모두 데리고 있으면 강화석 100개를 받습니다.</p>
+<p>다른 소환수는 강화석 100개 고정가로 골라서 데려옵니다. 무작위 구입은 없습니다.</p>
+<p>소환수 강화는 실패가 없습니다. 단계마다 생명력·피해 +4%, 최고 +10, +10까지 강화석 484개.</p>
+<div class="tw"><table>
+<thead><tr><th>소환수</th><th>확률</th></tr></thead><tbody>
+<tr><td>무덤 거인</td><td>50%</td></tr>
+<tr><td>사슬 집행자</td><td>50%</td></tr>
+</tbody></table></div>
+</main>
+</body>
+</html>
